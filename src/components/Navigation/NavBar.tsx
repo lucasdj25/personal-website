@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
+import { useEffect } from 'react';
 import './NavBar.css';
 
-function NavBar() {
+interface NavBarProps {
+    currentSection: string
+}
 
+function NavBar({currentSection}: NavBarProps) {
 
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-        let list = document.getElementById("navlist")
-
-    }
-    let setCurrent = (event: any) => {
+    function clearCurrent() {
         let list = document.getElementById("navlist")
         let items = list?.getElementsByTagName("li")
         for (var i = 0; i < items!.length; ++i) {
@@ -19,19 +16,30 @@ function NavBar() {
                 break
             }
         }
-        event.target.parentElement.classList.add("current")
     }
+
+    useEffect(()=> {
+        let list = document.getElementById("navlist")
+        let items = list?.getElementsByTagName("a")
+        for (var i = 0; i < items!.length; ++i) {
+            if (items![i].getAttribute("href") === `#${currentSection}`) {
+                clearCurrent()
+                items![i].parentElement?.classList.add("current")
+                break
+            }
+        }
+    },[currentSection])
 
 
 
     return (
         <nav id="navbar">
             <ul id="navlist">
-                <li className='current'><a onClick={setCurrent} href="#home-section">HOME</a></li>
-                <li><a onClick={setCurrent} href="#about-section">ABOUT</a></li>
-                <li><a onClick={setCurrent} href="#resume-section">RESUME</a></li>
-                <li><a onClick={setCurrent} href="#projects-section">PROJECTS</a></li>
-                <li><a onClick={setCurrent} href="#contact-section">CONTACT</a></li>
+                <li className='current'><a href="#home-section">HOME</a></li>
+                <li><a href="#about-section">ABOUT</a></li>
+                <li><a href="#resume-section">RESUME</a></li>
+                <li><a href="#projects-section">PROJECTS</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
             </ul>
         </nav>
     );
