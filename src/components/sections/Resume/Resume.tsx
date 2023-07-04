@@ -3,7 +3,7 @@ import './Resume.css';
 
 function Resume() {
     return (
-        <div className="resume-section section">
+        <div id="resume-section" className="section">
             <h1>Resume</h1>
         </div>
     );
