@@ -1,13 +1,9 @@
 import React from 'react';
 import './Contact.css';
 
-interface ContactProps {
-    contactRef: any
-}
-
-function Contact({contactRef}:ContactProps) {
+function Contact() {
     return (
-        <div id="contact-section" className="section" ref={contactRef}>
+        <div id="contact-section" className="section">
             <h1>Contact</h1>
         </div>
     );

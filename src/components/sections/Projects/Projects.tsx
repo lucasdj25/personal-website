@@ -1,13 +1,9 @@
 import React from 'react';
 import './Projects.css';
 
-interface ProjectsProps {
-    projectsRef: any
-}
-
-function Projects({projectsRef}:ProjectsProps) {
+function Projects() {
     return (
-        <div id="projects-section" className="section" ref={projectsRef}>
+        <div id="projects-section" className="section">
             <h1>Projects</h1>
         </div>
     );

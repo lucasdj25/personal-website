@@ -1,13 +1,9 @@
 import React from 'react';
 import './About.css';
 
-interface AboutProps {
-    aboutRef: any
-}
-
-function About({aboutRef}:AboutProps) {
+function About() {
     return (
-        <div id="about-section" className="section" ref={aboutRef}>
+        <div id="about-section" className="section">
             <h1>About</h1>
         </div>
     );

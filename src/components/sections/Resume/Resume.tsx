@@ -1,13 +1,9 @@
 import React from 'react';
 import './Resume.css';
 
-interface ResumeProps {
-    resumeRef: any
-}
-
-function Resume({resumeRef}:ResumeProps) {
+function Resume() {
     return (
-        <div id="resume-section" className="section" ref={resumeRef}>
+        <div id="resume-section" className="section">
             <h1>Resume</h1>
         </div>
     );

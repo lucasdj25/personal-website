@@ -1,11 +1,26 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './NavBar.css';
 
-interface NavBarProps {
-    currentSection: string
-}
 
-function NavBar({currentSection}: NavBarProps) {
+function NavBar() {
+
+    const [scrolled, setScrolled] = useState(false)
+    const [currentSection, setCurrentSection] = useState('home-section')
+
+    const sectionEls = document.querySelectorAll(".section") as NodeListOf<HTMLElement>
+
+    window.addEventListener("scroll", ()=> {
+        sectionEls.forEach(sectionEl => {
+            if(window.scrollY >= sectionEl.offsetTop - 90){
+                setCurrentSection(sectionEl.id)
+                if(sectionEl.id !== "home-section"){
+                    setScrolled(true)
+                }else{
+                    setScrolled(false)
+                }
+            }
+        })
+    })
 
     function clearCurrent() {
         let list = document.getElementById("navlist")
@@ -33,13 +48,13 @@ function NavBar({currentSection}: NavBarProps) {
 
 
     return (
-        <nav id="navbar">
+        <nav id="navbar" className={scrolled ? "navbar-scrolled" : ''}>
             <ul id="navlist">
                 <li className='current'><a href="#home-section">HOME</a></li>
-                <li><a href="#about-section">ABOUT</a></li>
-                <li><a href="#resume-section">RESUME</a></li>
-                <li><a href="#projects-section">PROJECTS</a></li>
-                <li><a href="#contact-section">CONTACT</a></li>
+                <li><a href="#about-section" className='navlink'>ABOUT</a></li>
+                <li><a href="#resume-section"className='navlink'>RESUME</a></li>
+                <li><a href="#projects-section"className='navlink'>PROJECTS</a></li>
+                <li><a href="#contact-section"className='navlink'>CONTACT</a></li>
             </ul>
         </nav>
     );

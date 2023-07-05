@@ -1,13 +1,9 @@
 import React from 'react';
 import './Home.css';
 
-interface HomeProps {
-    homeRef: any
-}
-
-function Home({homeRef}:HomeProps) {
+function Home() {
     return (
-        <div id="home-section" className="section" ref={homeRef}>
+        <div id="home-section" className="section">
             <h1>Home</h1>
         </div>
     );
