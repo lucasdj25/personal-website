@@ -11,7 +11,7 @@ function NavBar() {
 
     window.addEventListener("scroll", ()=> {
         sectionEls.forEach(sectionEl => {
-            if(window.scrollY >= sectionEl.offsetTop - 90){
+            if(window.scrollY >= sectionEl.offsetTop - 200){
                 setCurrentSection(sectionEl.id)
                 if(sectionEl.id !== "home-section"){
                     setScrolled(true)
