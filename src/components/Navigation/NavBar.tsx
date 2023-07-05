@@ -7,9 +7,8 @@ function NavBar() {
     const [scrolled, setScrolled] = useState(false)
     const [currentSection, setCurrentSection] = useState('home-section')
 
-    const sectionEls = document.querySelectorAll(".section") as NodeListOf<HTMLElement>
-
-    window.addEventListener("scroll", ()=> {
+    function handleScroll() {
+        const sectionEls = document.querySelectorAll(".section") as NodeListOf<HTMLElement>
         sectionEls.forEach(sectionEl => {
             if(window.scrollY >= sectionEl.offsetTop - 200){
                 setCurrentSection(sectionEl.id)
@@ -20,7 +19,16 @@ function NavBar() {
                 }
             }
         })
-    })
+    }
+
+    useEffect(()=> {
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
+
 
     function clearCurrent() {
         let list = document.getElementById("navlist")
