@@ -1,3 +1,13 @@
 #contact-section{
-    background: var(--primary-background-color)
+    background: var(--secondary-background-color)
+}
+
+.contact-icon{
+    width: 104px;
+    height: 104px;
+    color: black;
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+}
+.contact-icon:hover {
+    color: var(--secondary-color);
 }

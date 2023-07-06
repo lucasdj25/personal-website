@@ -7,6 +7,9 @@ function Resume() {
         <div id="resume-section" className="section content-section">
             <div className='centered'>
                 <SectionIntro title='Resume' desc='My work and education experience.' light={true} />
+                <div className='section-main-container-light rounded-corners'>
+                    
+                </div>
             </div>
         </div>
     );

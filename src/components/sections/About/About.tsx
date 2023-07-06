@@ -8,7 +8,7 @@ function About() {
         <div id="about-section" className="section content-section">
             <div className='centered'>
                 <SectionIntro title='About' desc='This is me.' light={false} />
-                <div className='about-content rounded-corners'>
+                <div className='section-main-container-dark rounded-corners'>
                     
                 </div>
             </div>
