@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Inter','Segoe UI', 'Roboto', 'Oxygen',
@@ -19,4 +24,11 @@ code {
 
 html {
   scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #0a94f7;
+  --secondary-color: orange;
+  --primary-background-color: #161616;
+  --secondary-background-color: white;
 }

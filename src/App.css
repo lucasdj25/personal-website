@@ -1,5 +1,15 @@
 .section {
-    border-bottom: 2px solid white;
-    height: 1000px;
-    width: 100%;
+    color: black;
 }
+
+.content-section {
+    padding: 125px 0 125px 0;
+}
+
+.centered {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

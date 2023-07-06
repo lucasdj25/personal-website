@@ -6,3 +6,9 @@
     height: 100vh;
     min-height: 500px;
 }
+
+#home-section h1 {
+    font-size: 80px;
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 4px black;
+}

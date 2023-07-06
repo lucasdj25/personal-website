@@ -1,0 +1,25 @@
+.intro {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 3.6rem;
+    position: relative;
+}
+
+.intro h3 {
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+.intro h2 {
+    font-size: 2.0em;
+}
+
+.light-intro {
+    color: black;
+}
+
+.dark-intro {
+    color: white;
+}

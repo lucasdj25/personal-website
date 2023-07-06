@@ -8,7 +8,7 @@
     text-align: center;
     align-content: center;
     padding: 10px 0px 10px 0px;
-    color: black;
+    z-index: 100;
   }
 
 .navbar-scrolled {
@@ -18,20 +18,21 @@
 }
 
 .navbar-scrolled a {
-    text-shadow: none !important;
+    text-shadow: none !important
 }
   
 /* Style the navbar links */
 #navbar a {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     display: block;
     color: white;
     text-align: center;
     padding: 15px 20px 15px 20px;
     text-decoration: none;
-    letter-spacing: 2.5px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    letter-spacing: 3px;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+    text-shadow: 2px 2px 4px black;
 }
 
 #navbar ul {
@@ -47,7 +48,8 @@
 }
 
 li.current a {
-    color: #beff00 !important;
+    color: var(--primary-color) !important;
+    /* color: #beff00 !important; */
 }
 
   
