@@ -28,7 +28,7 @@ html {
 
 :root {
   --primary-color: #0a94f7;
-  --secondary-color: orange;
+  --secondary-color: rgb(0, 241, 141);
   --primary-background-color: #161616;
   --secondary-background-color: white;
   --dark-section-container-color: rgb(36, 36, 36);

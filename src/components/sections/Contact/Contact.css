@@ -1,13 +1,48 @@
 #contact-section{
-    background: var(--secondary-background-color)
+    background: var(--primary-background-color)
 }
 
 .contact-icon{
-    width: 104px;
-    height: 104px;
+    width: 120px;
+    height: 120px;
     color: black;
-    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
+    filter: drop-shadow(2px 3px 2px rgb(0, 0, 0));
 }
 .contact-icon:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.logo-container {
+    box-sizing: border-box;
+    max-width: 1200px;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 120px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.logo h4 {
     color: var(--secondary-color);
+}
+
+.logo svg {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin: 0 0 2em 0;
+        flex-basis: 100%;
+    }
+    .logo-container {
+        padding: 0;
+    }
 }

@@ -18,6 +18,7 @@ function App() {
       <Resume />
       <Projects />
       <Contact />
+      <footer className='footer'></footer>
     </div>
   );
 }

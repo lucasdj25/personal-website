@@ -6,8 +6,8 @@ function Projects() {
     return (
         <div id="projects-section" className="section content-section">
             <div className='centered'>
-                <SectionIntro title='Projects' desc="Here's what I have been working on." light={false} />
-                <div className='section-main-container-dark rounded-corners'>
+                <SectionIntro title='Projects' desc="Here's what I have been working on." light={true} />
+                <div className='section-main-container white rounded-corners'>
                     
                 </div>
             </div>
