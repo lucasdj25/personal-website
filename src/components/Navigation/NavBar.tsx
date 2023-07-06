@@ -10,7 +10,7 @@ function NavBar() {
     function handleScroll() {
         const sectionEls = document.querySelectorAll(".section") as NodeListOf<HTMLElement>
         sectionEls.forEach(sectionEl => {
-            if(window.scrollY >= sectionEl.offsetTop - 200){
+            if(window.scrollY >= sectionEl.offsetTop - 275){
                 setCurrentSection(sectionEl.id)
                 if(sectionEl.id !== "home-section"){
                     setScrolled(true)
