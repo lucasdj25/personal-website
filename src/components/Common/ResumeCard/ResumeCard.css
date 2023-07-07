@@ -1,3 +1,40 @@
 .resume-card {
     width: 90%;
+    display: flex;
+}
+
+.resume-part-one {
+    width: 30%;
+    padding-right: 2em;
+}
+
+.resume-part-one img {
+    height: 150px;
+    width: 150px;
+    filter: drop-shadow(2px 3px 2px rgb(0, 0, 0));
+}
+
+.resume-part-one h5 {
+    padding-bottom: 1em;
+}
+
+.resume-card h5 {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    color: var(--primary-background-color)
+}
+
+.resume-part-two {
+    width: 70%;
+    text-align: left;
+    border-left: 1px solid rgb(216, 216, 216);
+    padding-left: 2em;
+}
+
+.resume-part-two p {
+    padding: .5em 0 .5em 0;
+}
+
+.position-div {
+    padding-bottom: 1.5em;
 }

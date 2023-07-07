@@ -12,14 +12,14 @@ function Resume() {
                 <div className='section-main-container grey rounded-corners'>
                     <div className='work-section'>
                         <h4>Work</h4>
-                        {resumeWorkInfo.map((item)=> {
-                            return <ResumeCard place={item.place} type={item.type} positions={item.positions}/>
+                        {resumeWorkInfo.map((item) => {
+                            return <ResumeCard place={item.place} type={item.type} positions={item.positions} img={item.img} />
                         })}
                     </div>
                     <div className='education-section'>
                         <h4>Education</h4>
-                        {resumeEducationInfo.map((item)=> {
-                            return <ResumeCard  place={item.place} type={item.type} positions={item.positions}/>
+                        {resumeEducationInfo.map((item) => {
+                            return <ResumeCard place={item.place} type={item.type} positions={item.positions} img={item.img} />
                         })}
                     </div>
                 </div>

@@ -14,4 +14,5 @@ export interface ResumeInfoModel {
     positions: PositionModel[]
     place: string
     type: ResumeInfoType
+    img: string
 }

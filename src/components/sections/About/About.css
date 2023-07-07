@@ -2,3 +2,6 @@
     background: var(--primary-background-color)
 }
 
+#about-section .section-main-container {
+    height: 1000px;
+}
