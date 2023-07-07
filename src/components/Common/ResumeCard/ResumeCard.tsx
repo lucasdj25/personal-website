@@ -3,14 +3,22 @@ import './ResumeCard.css';
 import { ResumeInfoModel } from '../../../models/ResumeInfoModel';
 
 
-function ResumeCard({title, startDate, endDate, place, desc, type}: ResumeInfoModel) {
+function ResumeCard({place, type, positions}: ResumeInfoModel) {
 
     return (
         <div className='resume-card'>
-            <p>{title}</p>
-            <p>{`${startDate} - ${endDate}`}</p>
-            <p>{place}</p>
-            <p>{desc}</p>
+            <div className='resume-part-one'>
+                <p>{place}</p>
+            </div>
+            <div className='resume-part-two'>
+                {positions.map((position)=> {
+                    return (
+                        <><p>{position.title}</p>
+                        <p>{`${position.startDate} - ${position.endDate}`}</p>
+                        <p>{position.desc}</p></>
+                    )
+                })}
+            </div>
         </div>  
     );
 }
