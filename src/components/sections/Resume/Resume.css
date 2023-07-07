@@ -1,3 +1,18 @@
 #resume-section {
     background: var(--secondary-background-color)
 }
+
+#resume-section h4 {
+    font-size: 2em;
+    color: var(--secondary-color);
+}
+
+.work-section {
+    text-align: center;
+    padding-top: 4em;
+}
+
+.education-section {
+    text-align: center;
+    padding: 4em 0 4em 0;
+}
