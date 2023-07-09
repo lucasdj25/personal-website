@@ -16,7 +16,7 @@ function ResumeCard({ place, type, positions, img }: ResumeInfoModel) {
                     return (
                         <div className='position-div'>
                             <h5>{position.title}</h5>
-                            <p>{`${position.startDate} - ${position.endDate}`}</p>
+                            <h6>{`${position.startDate} - ${position.endDate}`}</h6>
                             <p>{position.desc}</p>
                         </div>
                     )

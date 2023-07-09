@@ -27,12 +27,21 @@
 .resume-part-two {
     width: 70%;
     text-align: left;
-    border-left: 1px solid rgb(216, 216, 216);
+    border-left: 4px solid rgb(216, 216, 216);
     padding-left: 2em;
 }
 
-.resume-part-two p {
+.resume-part-two h6 {
     padding: .5em 0 .5em 0;
+    font-size: 1em;
+    font-weight: 300;
+    color: rgb(150, 150, 150);
+}
+
+.resume-part-two p {
+    font-weight: 400;
+    color: rgb(86, 86, 86);
+    line-height: 25px;
 }
 
 .position-div {
