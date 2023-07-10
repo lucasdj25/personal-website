@@ -46,8 +46,8 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
         place: "Grand Valley State University",
         type: ResumeInfoType.EDUCATION,
         img: "/assets/grand-valley-logo.webp"
-    }
-    , {
+    }, 
+    {
         positions: [
             {
                 title: "High School Diploma",

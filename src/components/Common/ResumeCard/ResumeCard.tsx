@@ -12,9 +12,9 @@ function ResumeCard({ place, type, positions, img }: ResumeInfoModel) {
                 <img src={img} alt={`${place} Logo`} />
             </div>
             <div className='resume-part-two'>
-                {positions.map((position) => {
+                {positions.map((position, i) => {
                     return (
-                        <div className='position-div'>
+                        <div className='position-div' key={`card${i}`}>
                             <h5>{position.title}</h5>
                             <h6>{`${position.startDate} - ${position.endDate}`}</h6>
                             <p>{position.desc}</p>

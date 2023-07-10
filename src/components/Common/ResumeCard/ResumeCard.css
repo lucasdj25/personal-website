@@ -1,6 +1,7 @@
 .resume-card {
     width: 90%;
     display: flex;
+    box-sizing: border-box;
 }
 
 .resume-part-one {
@@ -46,4 +47,18 @@
 
 .position-div {
     padding-bottom: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .resume-card {
+        border: none;
+        flex-wrap: wrap;
+    }
+    .resume-card div {
+        flex-basis: 100%;
+        border: none;
+    }
+    .resume-part-one {
+        padding: 0 0 2em 0;
+    }
 }
