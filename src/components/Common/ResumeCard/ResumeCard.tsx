@@ -3,7 +3,7 @@ import './ResumeCard.css';
 import { ResumeInfoModel } from '../../../models/ResumeInfoModel';
 
 
-function ResumeCard({ place, type, positions, img }: ResumeInfoModel) {
+function ResumeCard({ place, positions, img }: ResumeInfoModel) {
 
     return (
         <div className='resume-card'>

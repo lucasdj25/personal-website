@@ -13,13 +13,13 @@ function Resume() {
                     <div className='work-section'>
                         <h4>Work</h4>
                         {resumeWorkInfo.map((item, i) => {
-                            return <ResumeCard place={item.place} type={item.type} positions={item.positions} img={item.img} key={`work${i}`}/>
+                            return <ResumeCard place={item.place} positions={item.positions} img={item.img} key={`work${i}`}/>
                         })}
                     </div>
                     <div className='education-section'>
                         <h4>Education</h4>
                         {resumeEducationInfo.map((item, i) => {
-                            return <ResumeCard place={item.place} type={item.type} positions={item.positions} img={item.img} key={`education${i}`}/>
+                            return <ResumeCard place={item.place} positions={item.positions} img={item.img} key={`education${i}`}/>
                         })}
                     </div>
                 </div>

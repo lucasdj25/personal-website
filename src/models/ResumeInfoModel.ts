@@ -1,8 +1,3 @@
-export enum ResumeInfoType {
-    EDUCATION = "education",
-    WORK = "work"
-}
-
 interface PositionModel {
     title: string
     startDate: string
@@ -13,6 +8,5 @@ interface PositionModel {
 export interface ResumeInfoModel {
     positions: PositionModel[]
     place: string
-    type: ResumeInfoType
     img: string
 }

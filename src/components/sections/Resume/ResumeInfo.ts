@@ -1,4 +1,4 @@
-import { ResumeInfoModel, ResumeInfoType } from '../../../models/ResumeInfoModel';
+import { ResumeInfoModel } from '../../../models/ResumeInfoModel';
 
 export const resumeWorkInfo: ResumeInfoModel[] = [
     {
@@ -28,7 +28,6 @@ export const resumeWorkInfo: ResumeInfoModel[] = [
             }
         ],
         place: "Auto-Owners Insurance",
-        type: ResumeInfoType.WORK,
         img: "/assets/auto-owners-logo.png"
     }
 ]
@@ -44,7 +43,6 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
             }
         ],
         place: "Grand Valley State University",
-        type: ResumeInfoType.EDUCATION,
         img: "/assets/grand-valley-logo.webp"
     }, 
     {
@@ -57,7 +55,6 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
             }
         ],
         place: "Fremont High School",
-        type: ResumeInfoType.EDUCATION,
         img: "/assets/packers-logo.png"
     }
 ]
