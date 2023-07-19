@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import SectionIntro from '../../Common/SectionIntro/SectionIntro';
+import ProjectCard from '../../Common/ProjectCard/ProjectCard';
 
 function Projects() {
     return (
@@ -8,7 +9,7 @@ function Projects() {
             <div className='centered'>
                 <SectionIntro title='Projects' desc="Here's what I have been working on." light={true} />
                 <div className='section-main-container white rounded-corners'>
-                    
+                      
                 </div>
             </div>
         </div>

@@ -49,7 +49,8 @@
 
 li.current a {
     color: var(--primary-color) !important;
-    /* color: #beff00 !important; */
+    border-bottom: 3px  var(--primary-color) solid;
 }
+
 
   
