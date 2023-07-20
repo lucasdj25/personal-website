@@ -1,7 +1,3 @@
 #projects-section{
     background: var(--light-section-container-color);
 }
-
-#projects-section .section-main-container {
-    height: 1000px;
-}

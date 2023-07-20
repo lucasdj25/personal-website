@@ -1,0 +1,27 @@
+.project-card {
+    width: 250px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: var(--primary-background-color);
+}
+
+.project-card:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
+
+.project-card:hover h4{
+    color: black;
+}
+
+.project-card img{
+    width: 250px;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-card h4{
+    padding: 1rem 0 1rem 0;
+    color: var(--secondary-color)
+}
