@@ -1,19 +1,18 @@
 import React from 'react';
 import "./ProjectCard.css"
+import { ProjectModel } from '../../../models/ProjectModel';
 
 interface ProjectCardProps{
-    title: string;
-    image: string;
-    description?: string;
-    skills: string[]
+    project: ProjectModel
+    setModal(bool: boolean, project: ProjectModel): void;
 }
 
-function ProjectCard({title, image, description, skills}: ProjectCardProps){
+function ProjectCard({project, setModal}: ProjectCardProps){
 
     return (
-        <div className='project-card'>
-            <img src={image} alt={`${title }Project Card`}/>
-            <h4>{title}</h4>
+        <div className='project-card' onClick={() => setModal(true, project)}>
+            <img src={project.image} alt={`${project.title }Project Card`}/>
+            <h4>{project.title}</h4>
         </div>
     )
 }
