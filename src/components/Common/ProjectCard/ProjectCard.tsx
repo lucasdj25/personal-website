@@ -11,7 +11,7 @@ function ProjectCard({project, setModal}: ProjectCardProps){
 
     return (
         <div className='project-card' onClick={() => setModal(true, project)}>
-            <img src={project.image} alt={`${project.title }Project Card`}/>
+            <div className='img-div' style={{backgroundImage: `url(${project.image})`}}/>
             <h4>{project.title}</h4>
         </div>
     )

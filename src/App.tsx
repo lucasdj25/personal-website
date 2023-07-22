@@ -7,20 +7,21 @@ import Projects from './components/sections/Projects/Projects';
 import Contact from './components/sections/Contact/Contact';
 import NavBar from './components/Navigation/NavBar';
 import { ProjectModel } from './models/ProjectModel';
+import ProjectModal from './components/Common/ProjectModal/ProjectModal';
 
 function App() {
  
-  const [modalBackgroundActive, setModalBackgroundActive] = useState(false)
+  const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
 
   function setModal(backGroundActive: boolean, project: ProjectModel): void {
-    setModalBackgroundActive(backGroundActive)
+    setModalActive(backGroundActive)
     setModalProject(project)
   }
 
   return (
     <div className='App'>
-      {modalBackgroundActive && <div className="modal-background" onClick={()=>{setModalBackgroundActive(false)}}></div>}
+      {modalActive && <ProjectModal setModalActive={setModalActive} project={modalProject}/>}
         <NavBar/>
         <Home />
         <About />

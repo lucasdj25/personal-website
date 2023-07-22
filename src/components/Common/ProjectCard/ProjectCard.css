@@ -14,14 +14,17 @@
     color: black;
 }
 
-.project-card img{
+.project-card h4{
+    padding: 1rem 0 1rem 0;
+    color: var(--secondary-color)
+}
+
+.img-div{
     width: 250px;
     height: 250px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
-
-.project-card h4{
-    padding: 1rem 0 1rem 0;
-    color: var(--secondary-color)
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
