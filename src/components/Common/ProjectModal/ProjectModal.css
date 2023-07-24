@@ -16,11 +16,49 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    /* bring your own prefixes */
     transform: translate(-50%, -50%);
     z-index: 11;
-    height: 70%;
-    width: 70%;
-    background-color: white;
-    color: black;
+    height: 70vh;
+    width: 70vw;
+    background-color: black;
+    color: white;
+}
+
+.exit-button {
+    float: right;
+    font-weight: 700;
+    font-size: 2em;
+}
+.exit-button:hover {
+    cursor: pointer;
+    color: var(--secondary-color)
+}
+
+.project-modal-grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+}
+
+@media (max-width: 1000px) {
+    .project-modal-grid-container {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 60% 40%;
+        width: 100%;
+    }
+}
+
+.modal-image {
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.modal-content {
+    height: 100%;
+    width: 100%;
 }

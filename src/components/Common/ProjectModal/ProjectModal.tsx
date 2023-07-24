@@ -12,7 +12,13 @@ export default function ProjectModal({setModalActive, project}: ProjectModalProp
         <>
             <span className="modal-background" onClick={() => { setModalActive(false) } } />
             <div className='project-modal'>
-                <h1>{project?.title}</h1>
+                <div className='project-modal-grid-container'>
+                    <div className='modal-image' style={{backgroundImage: `url(${project?.image})`}}></div>
+                    <div className='modal-content'>
+                        <span className='exit-button' onClick={()=>setModalActive(false)}>X</span>
+                        <h1>{project?.title}</h1>
+                    </div>
+                </div>
             </div>
         </>
     )

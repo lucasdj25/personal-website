@@ -18,15 +18,6 @@ function Projects({setModal}: ProjectsProps) {
                 <div className='section-main-container white rounded-corners'>
                     <GridContainer>
                         <ProjectCard project={{title:"Personal Website", image:require("../../../assets/images/projects/personal-website.png"), skills:["React", "Typescript", "CSS"]}} setModal={setModal}/>
-                        <ProjectCard project={{title:"Personal Website", image:require("../../../assets/images/projects/personal-website.png"), skills:["React", "Typescript", "CSS"]}} setModal={setModal}/>
-                        <ProjectCard project={{title:"Personal Website", image:require("../../../assets/images/projects/personal-website.png"), skills:["React", "Typescript", "CSS"]}} setModal={setModal}/>
-                        <ProjectCard project={{title:"Personal Website", image:require("../../../assets/images/projects/personal-website.png"), skills:["React", "Typescript", "CSS"]}} setModal={setModal}/>
-                        <ProjectCard project={{title:"Personal Website", image:require("../../../assets/images/projects/personal-website.png"), skills:["React", "Typescript", "CSS"]}} setModal={setModal}/>
-                        <ProjectCard project={{title:"Personal Website", image:require("../../../assets/images/projects/personal-website.png"), skills:["React", "Typescript", "CSS"]}} setModal={setModal}/>
-                        <ProjectCard project={{title:"Personal Website", image:require("../../../assets/images/projects/personal-website.png"), skills:["React", "Typescript", "CSS"]}} setModal={setModal}/>
-                        <ProjectCard project={{title:"Personal Website", image:require("../../../assets/images/projects/personal-website.png"), skills:["React", "Typescript", "CSS"]}} setModal={setModal}/>
-                        <ProjectCard project={{title:"Personal Website", image:require("../../../assets/images/projects/personal-website.png"), skills:["React", "Typescript", "CSS"]}} setModal={setModal}/>
-                        <ProjectCard project={{title:"Personal Website", image:require("../../../assets/images/projects/personal-website.png"), skills:["React", "Typescript", "CSS"]}} setModal={setModal}/>
                     </GridContainer>
                 </div>
             </div>
