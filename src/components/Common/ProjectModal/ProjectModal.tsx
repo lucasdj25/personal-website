@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { ProjectModel } from '../../../models/ProjectModel'
 import "./ProjectModal.css"
 
@@ -8,6 +8,25 @@ interface ProjectModalProps{
 }
 
 export default function ProjectModal({setModalActive, project}: ProjectModalProps) {
+
+    const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 1000 ? true : false)
+
+    function handleResize(){
+        if(window.innerWidth <= 1000){
+            setSmallScreen(true)
+        }else{
+            setSmallScreen(false)
+        }
+    }
+
+    useEffect(()=> {
+        window.addEventListener("resize", handleResize)
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, [])
+        
     return (
         <>
             <span className="modal-background" onClick={() => { setModalActive(false) } } />
@@ -17,10 +36,12 @@ export default function ProjectModal({setModalActive, project}: ProjectModalProp
                     <div className='modal-content'>
                         <table>
                             <tbody>
-                                <tr>
-                                    <td><span className='exit-button' onClick={()=>setModalActive(false)}>X</span></td>
-                                </tr>
-                                <tr>
+                                {!smallScreen && (
+                                    <tr>
+                                        <td><span className='exit-button' onClick={()=>setModalActive(false)}>X</span></td>
+                                    </tr>
+                                )}
+                                <tr className='space-under'>
                                     <td><h1>{project?.title}</h1></td>
                                 </tr>
                                 <tr>
@@ -33,8 +54,9 @@ export default function ProjectModal({setModalActive, project}: ProjectModalProp
                 {project?.links && (<div className='project-modal-footer'>
                     <ul>
                         {project.links.map((p, i)=> {
-                            return <li><a href={p.url} target='_blank' rel="noreferrer" key={`projectlink${i}`}>{p.name}</a></li>
+                            return <li key={`projectlink${i}`}><a href={p.url} className='footer-button' target='_blank' rel="noreferrer">{p.name}</a></li>
                         })}
+                        {smallScreen && <li className='footer-button' onClick={()=>setModalActive(false)}>Close</li>}
                     </ul>
                 </div>)}
             </div>

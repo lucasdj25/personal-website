@@ -12,6 +12,9 @@ function NavBar() {
         sectionEls.forEach(sectionEl => {
             if(window.scrollY >= sectionEl.offsetTop - 275){
                 setCurrentSection(sectionEl.id)
+                if((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight){
+                    setCurrentSection("contact-section")
+                }
                 if(sectionEl.id !== "home-section"){
                     setScrolled(true)
                 }else{

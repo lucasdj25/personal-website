@@ -83,7 +83,7 @@
     align-content: center;
 }
 
-.project-modal-footer a {
+.footer-button {
     font-size: 15px;
     font-weight: bold;
     display: block;
@@ -91,6 +91,11 @@
     text-align: center;
     text-decoration: none;
     letter-spacing: 2px;
+}
+
+.footer-button:hover {
+    cursor: pointer;
+    color: var(--secondary-color) !important;
 }
 
 .project-modal-footer ul {
@@ -106,13 +111,6 @@
     padding-left: 2rem;
 }
 
-.project-modal-footer a {
-    color: white;
-}
-.project-modal-footer a:hover {
-    color: var(--secondary-color) !important;
-}
-
 .project-modal table {
     width: 100%;
     padding: 1rem;
@@ -125,3 +123,11 @@
     padding: 1rem;
     border-radius: 10px;
 }
+
+.project-modal p {
+    line-height: 25px;
+}
+
+tr.space-under>td {
+    padding-bottom: 1.5em;
+  }
