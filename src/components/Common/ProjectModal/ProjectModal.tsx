@@ -15,10 +15,28 @@ export default function ProjectModal({setModalActive, project}: ProjectModalProp
                 <div className='project-modal-grid-container'>
                     <div className='modal-image' style={{backgroundImage: `url(${project?.image})`}}></div>
                     <div className='modal-content'>
-                        <span className='exit-button' onClick={()=>setModalActive(false)}>X</span>
-                        <h1>{project?.title}</h1>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><span className='exit-button' onClick={()=>setModalActive(false)}>X</span></td>
+                                </tr>
+                                <tr>
+                                    <td><h1>{project?.title}</h1></td>
+                                </tr>
+                                <tr>
+                                    <td className='project-modal-description'><p>{project?.description ?? ""}</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
+                {project?.links && (<div className='project-modal-footer'>
+                    <ul>
+                        {project.links.map((p, i)=> {
+                            return <li><a href={p.url} target='_blank' rel="noreferrer" key={`projectlink${i}`}>{p.name}</a></li>
+                        })}
+                    </ul>
+                </div>)}
             </div>
         </>
     )

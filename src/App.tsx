@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Home from './components/sections/Home/Home';
 import About from './components/sections/About/About';
@@ -14,13 +14,22 @@ function App() {
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
 
+  useEffect(()=> {
+    const body = document.querySelector("body");
+    if (modalActive) {
+      if(body) body.style.overflow = "hidden";
+    } else {
+      if(body) body.style.overflow = "auto";
+    }
+  }, [modalActive])
+
   function setModal(backGroundActive: boolean, project: ProjectModel): void {
     setModalActive(backGroundActive)
     setModalProject(project)
   }
 
   return (
-    <div className='App'>
+    <div className={`App`} >
       {modalActive && <ProjectModal setModalActive={setModalActive} project={modalProject}/>}
         <NavBar/>
         <Home />

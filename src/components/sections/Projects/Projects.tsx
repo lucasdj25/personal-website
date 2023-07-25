@@ -4,6 +4,7 @@ import SectionIntro from '../../Common/SectionIntro/SectionIntro';
 import ProjectCard from '../../Common/ProjectCard/ProjectCard';
 import GridContainer from '../../Common/GridContainer/GridContainer';
 import { ProjectModel } from '../../../models/ProjectModel';
+import { projectInfo } from './ProjectInfo';
 
 interface ProjectsProps {
     setModal(bool: boolean, project: ProjectModel): void;
@@ -17,7 +18,9 @@ function Projects({setModal}: ProjectsProps) {
                 <SectionIntro title='Projects' desc="Here's what I have been working on." light={true} />
                 <div className='section-main-container white rounded-corners'>
                     <GridContainer>
-                        <ProjectCard project={{title:"Personal Website", image:require("../../../assets/images/projects/personal-website.png"), skills:["React", "Typescript", "CSS"]}} setModal={setModal}/>
+                        {projectInfo.map((project, i) => {
+                            return <ProjectCard project={project} setModal={setModal} key={`project${i}`}/>
+                        })}
                     </GridContainer>
                 </div>
             </div>

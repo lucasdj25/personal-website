@@ -4,7 +4,7 @@ import './NavBar.css';
 
 function NavBar() {
 
-    const [scrolled, setScrolled] = useState(false)
+    const [scrolled, setScrolled] = useState(true)
     const [currentSection, setCurrentSection] = useState('home-section')
 
     function handleScroll() {
@@ -15,7 +15,12 @@ function NavBar() {
                 if(sectionEl.id !== "home-section"){
                     setScrolled(true)
                 }else{
-                    setScrolled(false)
+                    // eslint-disable-next-line eqeqeq
+                    if(window.scrollY == 0){
+                        setScrolled(true)
+                    }else{
+                        setScrolled(false)
+                    }
                 }
             }
         })

@@ -8,6 +8,12 @@
 .project-card:hover {
     cursor: pointer;
     background-color: var(--secondary-color);
+    transition: all .2s ease-out;
+    box-shadow: 0 4px 8px rgba(26, 26, 26, 0.645);
+}
+
+.project-card:active {
+    background-color: white;
 }
 
 .project-card:hover h4{
@@ -17,6 +23,10 @@
 .project-card h4{
     padding: 1rem 0 1rem 0;
     color: var(--secondary-color)
+}
+
+.project-card:active h4{
+    color: black;
 }
 
 .img-div{

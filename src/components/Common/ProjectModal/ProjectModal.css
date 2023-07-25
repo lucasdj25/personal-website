@@ -20,8 +20,14 @@
     z-index: 11;
     height: 70vh;
     width: 70vw;
-    background-color: black;
+    background-color: var(--primary-background-color);
     color: white;
+}
+
+@media (max-width: 1700px) {
+    .project-modal {
+        width: 90vw;
+    }
 }
 
 .exit-button {
@@ -47,6 +53,10 @@
         grid-template-rows: 60% 40%;
         width: 100%;
     }
+
+    .project-modal-footer {
+        border-top: 2px solid var(--secondary-color);
+    }
 }
 
 .modal-image {
@@ -61,4 +71,57 @@
 .modal-content {
     height: 100%;
     width: 100%;
+    overflow-y: scroll;
+}
+
+.project-modal-footer {
+    background-color: black;
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.project-modal-footer a {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.project-modal-footer ul {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.project-modal-footer li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 2rem;
+}
+
+.project-modal-footer a {
+    color: white;
+}
+.project-modal-footer a:hover {
+    color: var(--secondary-color) !important;
+}
+
+.project-modal table {
+    width: 100%;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+.project-modal-description {
+    background-color: var(--dark-section-container-color);
+    color: rgb(217, 215, 215);
+    padding: 1rem;
+    border-radius: 10px;
 }
