@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { ProjectModel } from '../../../models/ProjectModel'
 import "./ProjectModal.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTag } from '@fortawesome/free-solid-svg-icons'
 
 interface ProjectModalProps{
     setModalActive: React.Dispatch<React.SetStateAction<boolean>>
@@ -47,12 +49,22 @@ export default function ProjectModal({setModalActive, project}: ProjectModalProp
                                 <tr>
                                     <td className='project-modal-description'><p>{project?.description ?? ""}</p></td>
                                 </tr>
+                                {(project && project.skills.length > 0) && (
+                                    <tr className='space-above '>
+                                        <td className='project-modal-skills'>
+                                            <FontAwesomeIcon icon={faTag} className='tag-icon' />    
+                                            {project.skills.reduce((skillString, skill)=> {
+                                                return `${skillString}, ${skill}`
+                                            })}
+                                        </td>
+                                    </tr>
+                                )}
                             </tbody>
                         </table>
                     </div>
                 </div>
                 {project?.links && (<div className='project-modal-footer'>
-                    <ul>
+                    <ul >
                         {project.links.map((p, i)=> {
                             return <li key={`projectlink${i}`}><a href={p.url} className='footer-button' target='_blank' rel="noreferrer">{p.name}</a></li>
                         })}

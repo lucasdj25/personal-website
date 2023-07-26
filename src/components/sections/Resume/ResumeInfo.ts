@@ -16,7 +16,7 @@ export const resumeWorkInfo: ResumeInfoModel[] = [
                 endDate: "May 2023",
                 desc: "Starting in January of 2023 I returned to Auto-owners. I worked part-time during my last semester in college where I continued "
                     + "working on the same web app that we had created during my internship. The app had been released at this point and had a list of enhancements "
-                    + "for me to add as well as adding a suite of unit test using the Jest framework and integration and end-to-end test using the Cypress Framework",
+                    + "for me to add as well as adding a suite of unit tests using the Jest framework and integration and end-to-end tests using the Cypress Framework",
             },
             {
                 title: "Intern Software Developer",

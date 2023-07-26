@@ -130,4 +130,17 @@
 
 tr.space-under>td {
     padding-bottom: 1.5em;
-  }
+}
+
+tr.space-above>td {
+    padding-top: 1em;
+}
+
+.project-modal-skills {
+    padding: .5rem .5rem 0 .5rem;
+    font-weight: 200;
+}
+
+.tag-icon {
+    padding: 0 .75rem 0 1rem;
+}
