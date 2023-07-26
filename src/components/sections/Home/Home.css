@@ -11,4 +11,46 @@
     font-size: 80px;
     color: var(--secondary-color);
     text-shadow: 2px 2px 4px black;
+    padding-bottom: 1rem;
+}
+
+.home-logo-list li {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 2rem 0 2rem;
+}
+
+.home-logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--secondary-color);
+    filter: drop-shadow(2px 3px 2px rgb(0, 0, 0));
+}
+
+.home-logo:hover {
+    color: white;
+}
+
+.home-spacer-line {
+    width: 80%;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.main-home-content {
+    backdrop-filter: blur(5px);
+    padding: 4rem;
+    border-radius: 20px;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 740px) {
+    .main-home-content {
+        border: 2px solid transparent;
+        backdrop-filter: none;
+    }
 }

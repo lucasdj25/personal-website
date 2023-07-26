@@ -139,6 +139,7 @@ tr.space-above>td {
 .project-modal-skills {
     padding: .5rem .5rem 0 .5rem;
     font-weight: 200;
+    color: rgb(197, 197, 197);
 }
 
 .tag-icon {

@@ -39,7 +39,7 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
                 title: "Bachelors Degree",
                 startDate: "September 2019",
                 endDate: "May 2023",
-                desc: "I graduated from Grand Valley State University in Spring of 2023 with a Bachelor's Degree in Computer Science. "
+                desc: "I graduated Summa Cum Laude from Grand Valley State University in Spring of 2023 with a Bachelor's Degree in Computer Science and a GPA of 3.9. "
                     + "My favorite project I worked on during my time at GVSU was my capstone project, where we were recruited by a small tech company who was in the process of "
                     + "completed rebuilding their website using modern tooling. For the project we utilized React with Typescript and the material design component library for the frontend "
                     + "and PHP with the Laravel framework for the backend."
