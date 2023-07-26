@@ -54,7 +54,7 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
                 title: "High School Diploma",
                 startDate: "August 2015",
                 endDate: "June 2019",
-                desc: "TODO"
+                desc: "TODO" // TODO - Complete High school description
             }
         ],
         place: "Fremont High School",

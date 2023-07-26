@@ -4,12 +4,17 @@ import SectionIntro from '../../Common/SectionIntro/SectionIntro';
 import { resumeWorkInfo, resumeEducationInfo } from './ResumeInfo';
 import ResumeCard from '../../Common/ResumeCard/ResumeCard';
 
+// TODO - Try out different Resume section style (Roadmap style where hovering over a particular node displays the description)
+
 function Resume() {
     return (
         <div id="resume-section" className="section content-section">
             <div className='centered'>
                 <SectionIntro title='Resume' desc='My work and education experience.' light={true} />
-                <button id="cv-button">Download CV</button>
+                <button id="cv-button" onClick={()=> {
+                    console.log("DOWNLOAD CV")
+                    // TODO - Add updated CV to project
+                }}>Download CV</button>
                 <div className='section-main-container grey rounded-corners'>
                     <div className='work-section'>
                         <h4>Work</h4>

@@ -11,6 +11,10 @@ import ProjectModal from './components/Common/ProjectModal/ProjectModal';
 
 function App() {
  
+  // TODO - Make everything look better on small screen sizes
+
+  // TODO - Update website logos
+
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
 

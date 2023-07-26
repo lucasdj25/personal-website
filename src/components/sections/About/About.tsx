@@ -9,7 +9,7 @@ function About() {
             <div className='centered'>
                 <SectionIntro title='About' desc='This is me.' light={false} />
                 <div className='section-main-container dark rounded-corners'>
-                    
+                    {/* TODO - Add About section */}
                 </div>
             </div>
         </div>
