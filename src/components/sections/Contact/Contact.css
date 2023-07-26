@@ -7,6 +7,7 @@
     height: 120px;
     color: black;
     filter: drop-shadow(2px 3px 2px rgb(0, 0, 0));
+    transition: all .2s ease-in-out;
 }
 .contact-icon:hover {
     color: var(--primary-color);

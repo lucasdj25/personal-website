@@ -10,6 +10,7 @@
     background-color: var(--secondary-color);
     transition: all .2s ease-out;
     box-shadow: 0 4px 8px rgba(26, 26, 26, 0.645);
+    transition: all .2s ease-in-out;
 }
 
 .project-card:active {

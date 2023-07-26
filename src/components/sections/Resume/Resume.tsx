@@ -9,6 +9,7 @@ function Resume() {
         <div id="resume-section" className="section content-section">
             <div className='centered'>
                 <SectionIntro title='Resume' desc='My work and education experience.' light={true} />
+                <button id="cv-button">Download CV</button>
                 <div className='section-main-container grey rounded-corners'>
                     <div className='work-section'>
                         <h4>Work</h4>
