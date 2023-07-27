@@ -5,3 +5,14 @@
 #about-section .section-main-container {
     height: 1000px;
 }
+
+.picture-div {
+    background-image: url(../../../assets/images/portrait.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+}
