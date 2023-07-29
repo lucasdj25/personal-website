@@ -38,3 +38,8 @@ html {
   --dark-section-container-color: rgb(36, 36, 36);
   --light-section-container-color: rgb(228, 228, 228);
 }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
