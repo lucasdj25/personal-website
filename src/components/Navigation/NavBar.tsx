@@ -1,17 +1,13 @@
 import { useEffect, useState } from 'react';
 import './NavBar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 function NavBar() {
 
-    // TODO - Add transition in mobile screen
+    // TODO - Better support for mobile screens
 
     const [scrolled, setScrolled] = useState(true)
     const [currentSection, setCurrentSection] = useState('home-section')
-    const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 610 ? true : false)
-    const [navDisplayed, setNavDisplayed] = useState(false)
 
     function handleScroll() {
         const sectionEls = document.querySelectorAll(".section") as NodeListOf<HTMLElement>
@@ -35,21 +31,11 @@ function NavBar() {
         })
     }
 
-    function handleResize(){
-        if(window.innerWidth <= 610){
-            setSmallScreen(true)
-        }else{
-            setSmallScreen(false)
-        }
-    }
-
     useEffect(()=> {
         window.addEventListener("scroll", handleScroll)
-        window.addEventListener("resize", handleResize)
 
         return () => {
             window.removeEventListener("scroll", handleScroll)
-            window.removeEventListener("resize", handleResize)
         }
     }, [])
 
@@ -81,18 +67,13 @@ function NavBar() {
 
     return (
         <nav id="navbar" className={scrolled ? "navbar-scrolled" : ''}>
-            {smallScreen && 
-                <div className='icon-div'>
-                    <FontAwesomeIcon icon={faBars} id='hamburger-icon' onClick={()=> {setNavDisplayed(!navDisplayed)}}/>
-                </div>
-            }
-                <ul id="navlist" className={navDisplayed && smallScreen ? 'nav-opened' : ''}>
-                    <li className='current'><a href="#home-section">HOME</a></li>
-                    <li><a href="#about-section" className='navlink'>ABOUT</a></li>
-                    <li><a href="#resume-section"className='navlink'>RESUME</a></li>
-                    <li><a href="#projects-section"className='navlink'>PROJECTS</a></li>
-                    <li><a href="#contact-section"className='navlink'>CONTACT</a></li>
-                </ul>
+            <ul id="navlist">
+                <li className='current'><a href="#home-section">HOME</a></li>
+                <li><a href="#about-section" className='navlink'>ABOUT</a></li>
+                <li><a href="#resume-section"className='navlink'>RESUME</a></li>
+                <li><a href="#projects-section"className='navlink'>PROJECTS</a></li>
+                <li><a href="#contact-section"className='navlink'>CONTACT</a></li>
+            </ul>
         </nav>
     );
 }

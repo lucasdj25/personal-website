@@ -8,6 +8,7 @@ import Contact from './components/sections/Contact/Contact';
 import NavBar from './components/Navigation/NavBar';
 import { ProjectModel } from './models/ProjectModel';
 import ProjectModal from './components/Common/ProjectModal/ProjectModal';
+import MobileNavigationBar from './components/Navigation/MobileNavigationBar';
 
 function App() {
  
@@ -19,6 +20,23 @@ function App() {
 
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
+  const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 610 ? true : false)
+
+  function handleResize(){
+    if(window.innerWidth <= 610){
+        setSmallScreen(true)
+    }else{
+        setSmallScreen(false)
+    }
+}
+
+  useEffect(()=> {
+      window.addEventListener("resize", handleResize)
+
+      return () => {
+          window.removeEventListener("resize", handleResize)
+      }
+  }, [])
 
   useEffect(()=> {
     const body = document.querySelector("body");
@@ -36,8 +54,8 @@ function App() {
 
   return (
     <div className={`App`} >
-      {modalActive && <ProjectModal setModalActive={setModalActive} project={modalProject}/>}
-        <NavBar/>
+        {modalActive && <ProjectModal setModalActive={setModalActive} project={modalProject}/>}
+        {smallScreen ? <MobileNavigationBar/> :<NavBar/>}
         <Home />
         <About />
         <Resume />
