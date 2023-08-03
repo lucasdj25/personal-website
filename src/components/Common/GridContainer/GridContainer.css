@@ -5,4 +5,10 @@
     padding: 40px;
     justify-items: center;
   }
+
+  @media (max-width: 510px) {
+    .grid-container {
+        padding: 40px 0 40px 0;
+    }
+  }
   
