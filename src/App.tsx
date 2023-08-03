@@ -20,10 +20,10 @@ function App() {
 
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
-  const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 610 ? true : false)
+  const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 630 ? true : false)
 
   function handleResize(){
-    if(window.innerWidth <= 610){
+    if(window.innerWidth <= 630){
         setSmallScreen(true)
     }else{
         setSmallScreen(false)

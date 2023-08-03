@@ -4,8 +4,6 @@ import './NavBar.css';
 
 function NavBar() {
 
-    // TODO - Better support for mobile screens
-
     const [scrolled, setScrolled] = useState(true)
     const [currentSection, setCurrentSection] = useState('home-section')
 

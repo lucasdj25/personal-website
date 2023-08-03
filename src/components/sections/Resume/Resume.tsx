@@ -11,10 +11,7 @@ function Resume() {
         <div id="resume-section" className="section content-section">
             <div className='centered'>
                 <SectionIntro title='Resume' desc='My work and education experience.' light={true} />
-                <button id="cv-button" onClick={()=> {
-                    console.log("DOWNLOAD CV")
-                    // TODO - Add updated CV to project
-                }}>Download CV</button>
+                <a id="cv-button" target="_blank" href={require("../../../assets/files/resume.pdf")} rel="noreferrer">Download CV</a>
                 <div className='section-main-container grey rounded-corners'>
                     <div className='work-section'>
                         <h4>Work</h4>

@@ -4,6 +4,7 @@
     top: 0; 
     width: 100%;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     text-align: center;
     align-content: center;
@@ -22,7 +23,6 @@
     text-shadow: none !important
 }
   
-/* Style the navbar links */
 #navbar a {
     font-size: 15px;
     font-weight: bold;
@@ -33,7 +33,9 @@
     text-decoration: none;
     letter-spacing: 3px;
     text-shadow: 2px 2px 4px black;
-
+}
+#navbar a:hover {
+    color:#cccccc;
 }
 
 #navbar ul {
