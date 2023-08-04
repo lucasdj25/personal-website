@@ -54,7 +54,9 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
                 title: "High School Diploma",
                 startDate: "August 2015",
                 endDate: "June 2019",
-                desc: "TODO" // TODO - Complete High school description
+                desc: "I graduated from Fremont Public Highschool in Spring of 2019 with a GPA of 3.9. During my time in High school I partipated in multiple different "
+                    + "extracurricular activities including soccer in the Fall and Winter and golf in the Spring. I was a soccer captain and was named all Conference and all District. "
+                    + "I was also a member of my schools Honor Society."
             }
         ],
         place: "Fremont High School",

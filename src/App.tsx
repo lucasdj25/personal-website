@@ -16,8 +16,6 @@ function App() {
 
   // TODO - Update website logos
 
-  // TODO - Update components for extremely small screens (Galaxy Fold)
-
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
   const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 630 ? true : false)
