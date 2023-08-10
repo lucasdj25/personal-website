@@ -56,7 +56,7 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
                 endDate: "June 2019",
                 desc: "I graduated from Fremont Public Highschool in Spring of 2019 with a GPA of 3.9. During my time in High school I partipated in multiple different "
                     + "extracurricular activities including soccer in the Fall and Winter and golf in the Spring. I was a soccer captain and was named all Conference and all District. "
-                    + "I was also a member of my schools Honor Society."
+                    + "I was also a member of my school's National Honor Society."
             }
         ],
         place: "Fremont High School",

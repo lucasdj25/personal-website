@@ -8,5 +8,5 @@ interface PositionModel {
 export interface ResumeInfoModel {
     positions: PositionModel[]
     place: string
-    img: string
+    img?: string
 }

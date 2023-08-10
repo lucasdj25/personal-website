@@ -9,7 +9,7 @@ function ResumeCard({ place, positions, img }: ResumeInfoModel) {
         <div className='resume-card'>
             <div className='resume-part-one'>
                 <h5>{place}</h5>
-                <img src={img} alt={`${place} Logo`} />
+                {img && <img src={img} alt={`${place} Logo`} />}
             </div>
             <div className='resume-part-two'>
                 {positions.map((position, i) => {

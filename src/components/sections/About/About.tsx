@@ -11,10 +11,12 @@ function About() {
             <div className='centered'>
                 <SectionIntro title='About' desc='This is me.' light={false} />
                 <div className='section-main-container dark rounded-corners'>
-                    {/* <div className=''>
+                    <div className='introduction'>
                         <div className='picture-div' />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div> */}
+                        <p>Hello, I'm Lucas Johnson! I am a software developer who recently graduated from Grand Valley State University with a Bachelor's degree in Computer science
+                            and I'm looking to further grow my technical and soft skills. I am extremely passionate about web development, however I am always eager to learn about new branches of 
+                            software development whenever possible! Feel free to contact me if you would like to learn more about me.</p>
+                    </div>
                 </div>
             </div>
         </div>
