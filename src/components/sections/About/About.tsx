@@ -4,7 +4,7 @@ import SectionIntro from '../../Common/SectionIntro/SectionIntro';
 
 function About() {
 
-    // TODO - Add the About section
+    // TODO - Finish About section
 
     return (
         <div id="about-section" className="section content-section">
