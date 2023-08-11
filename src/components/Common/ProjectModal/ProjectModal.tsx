@@ -64,7 +64,7 @@ export default function ProjectModal({setModalActive, project}: ProjectModalProp
                     </div>
                 </div>
                 {(project?.links || smallScreen) && (<div className='project-modal-footer'>
-                    <ul >
+                    <ul>
                         {project?.links && project.links.map((p, i)=> {
                             return <li key={`projectlink${i}`}><a href={p.url} className='footer-button' target='_blank' rel="noreferrer">{p.name}</a></li>
                         })}

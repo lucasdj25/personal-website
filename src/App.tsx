@@ -11,8 +11,6 @@ import ProjectModal from './components/Common/ProjectModal/ProjectModal';
 import MobileNavigationBar from './components/Navigation/MobileNavigationBar';
 
 function App() {
- 
-  // TODO - Make everything look better on small screen sizes
 
   // TODO - Update website logos
 
