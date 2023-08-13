@@ -17,6 +17,7 @@ function About() {
                             and I'm looking to further grow my technical and soft skills. I am extremely passionate about web development, however I am always eager to learn about new branches of 
                             software development whenever possible! Feel free to contact me if you would like to learn more about me.</p>
                     </div>
+                    <a id="cv-button" href={"#contact-section"}>Contact me</a>
                     <div className='about-content'>
                         <div className='skills about-content-section'>
                             <h4>SKILLS</h4>
@@ -24,6 +25,7 @@ function About() {
                                 Here are some highlights of my technical skills, check out the <a href='#resume-section'>resume</a> and 
                                 <a href='#projects-section'> projects</a> sections to see more of my programming skills and experience.
                             </p>
+                            
                         </div>
                         <div className='interests about-content-section'>
                             <h4>INTERESTS</h4>

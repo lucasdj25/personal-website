@@ -12,8 +12,6 @@ import MobileNavigationBar from './components/Navigation/MobileNavigationBar';
 
 function App() {
 
-  // TODO - Update website logos
-
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
   const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 630 ? true : false)
