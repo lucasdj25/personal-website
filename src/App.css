@@ -38,6 +38,16 @@
     text-decoration: none;
 }
 
+@media (max-width: 300px) {
+    .button {
+        font-size: 80%;
+    }
+}
+
+.button:hover {
+    background-color: rgb(72, 72, 72);
+}
+
 
 .white {
     background-color: white;

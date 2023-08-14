@@ -12,12 +12,14 @@ import MobileNavigationBar from './components/Navigation/MobileNavigationBar';
 
 function App() {
 
+  // TODO - checkout out reacts-spring for animation
+
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
-  const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 630 ? true : false)
+  const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 700 ? true : false)
 
   function handleResize(){
-    if(window.innerWidth <= 630){
+    if(window.innerWidth <= 700){
         setSmallScreen(true)
     }else{
         setSmallScreen(false)

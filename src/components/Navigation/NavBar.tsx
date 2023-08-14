@@ -21,15 +21,10 @@ function NavBar() {
                 if (window.scrollY + windowHeight >= documentHeight - threshold){
                     setCurrentSection("contact-section")
                 }
-                if(sectionEl.id !== "home-section"){
+                if(window.scrollY > 200){
                     setScrolled(true)
                 }else{
-                    // eslint-disable-next-line eqeqeq
-                    if(window.scrollY == 0){
-                        setScrolled(true)
-                    }else{
-                        setScrolled(false)
-                    }
+                    setScrolled(false)
                 }
             }
         })
