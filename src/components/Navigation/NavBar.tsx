@@ -12,7 +12,13 @@ function NavBar() {
         sectionEls.forEach(sectionEl => {
             if(window.scrollY >= sectionEl.offsetTop - 275){
                 setCurrentSection(sectionEl.id)
-                if((window.innerHeight + Math.round(window.scrollY)) >= document.body.offsetHeight){
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+                const documentHeight = Math.max(
+                    document.body.scrollHeight || 0,
+                    document.documentElement.scrollHeight || 0
+                );
+                const threshold = 10;
+                if (window.scrollY + windowHeight >= documentHeight - threshold){
                     setCurrentSection("contact-section")
                 }
                 if(sectionEl.id !== "home-section"){
