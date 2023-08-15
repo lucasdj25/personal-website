@@ -65,9 +65,9 @@ const MobileNavigationBar = () => {
   };
 
   return (
-    <div className={`mobile-nav ${isOpen ? 'open' : 'closed'}`}>
+    <div className={`mobile-nav ${isOpen ? 'open' : 'closed'}`}  onClick={toggleNav}>
       <div className="button-container">
-        <FontAwesomeIcon icon={faBars} id='hamburger-icon' onClick={toggleNav}/>
+        <FontAwesomeIcon icon={faBars} id='hamburger-icon'/>
       </div>
       <div 
         id='mobile-nav-list'

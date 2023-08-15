@@ -73,7 +73,13 @@
         border-radius: 0;
         filter: none;
     }
-    .content-section{
-        border-top: 2px solid black;
+    .grey {
+        background-color: transparent;
+    } 
+    .white {
+        background-color: transparent;
+    } 
+    .section{
+        padding: 50px 0 50px 0;
     }
 }
