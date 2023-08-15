@@ -12,7 +12,11 @@ import MobileNavigationBar from './components/Navigation/MobileNavigationBar';
 
 function App() {
 
-  // TODO - checkout out reacts-spring for animation
+  // TODO - checkout out reacts-spring for animations
+
+  // TODO - potentially add Skills Section (blue background)
+
+  // TODO - see if app looks better without section containers (remove color/border/filter)
 
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
