@@ -1,6 +1,7 @@
 import React from 'react';
 import './ResumeCard.css';
 import { ResumeInfoModel } from '../../../models/ResumeInfoModel';
+import ResumeImage from '../ResumeImage/ResumeImage';
 
 
 function ResumeCard({ place, positions, img }: ResumeInfoModel) {
@@ -9,7 +10,7 @@ function ResumeCard({ place, positions, img }: ResumeInfoModel) {
         <div className='resume-card'>
             <div className='resume-part-one'>
                 <h5>{place}</h5>
-                {img && <img src={img} alt={`${place} Logo`} />}
+                <ResumeImage img={img} place={place}/>
             </div>
             <div className='resume-part-two'>
                 {positions.map((position, i) => {

@@ -10,6 +10,7 @@ function Home() {
             <div className='centered'>
                 <div className='main-home-content'>
                     <h1>Lucas Johnson</h1>
+                    {/* TODO - Full-stack Software Engineer / Front-End Developer */}
                     <div className='home-spacer-line'/>
                     <ul className='home-logo-list'>
                         <li>

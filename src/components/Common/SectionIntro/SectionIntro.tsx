@@ -5,13 +5,14 @@ interface SectionIntroProps {
     title: string
     desc: string
     light: boolean
+    titleColor?: string
 }
 
-function SectionIntro({title, desc, light}: SectionIntroProps){
+function SectionIntro({title, desc, light, titleColor}: SectionIntroProps){
 
     return (
         <div className={`intro ${light ? 'light-intro' : 'dark-intro'}`} >
-            <h3>{title}</h3>
+            <h3 style={{ color: titleColor}}>{title}</h3>
             <h2>{desc}</h2>
         </div>
     )

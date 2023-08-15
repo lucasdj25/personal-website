@@ -5,14 +5,11 @@
 }
 
 .resume-part-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 30%;
     padding-right: 2em;
-}
-
-.resume-part-one img {
-    height: 150px;
-    width: 150px;
-    filter: drop-shadow(2px 3px 2px rgb(0, 0, 0));
 }
 
 .resume-part-one h5 {
@@ -52,12 +49,10 @@
 
 @media (max-width: 768px) {
     .resume-card {
-        border: none;
         flex-wrap: wrap;
     }
     .resume-card div {
         flex-basis: 100%;
-        border: none;
     }
     .resume-part-one {
         padding: 0 0 2em 0;

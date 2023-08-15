@@ -1,0 +1,22 @@
+.resume-img {
+    width: 170px;
+    height: 170px;
+    border: 7px solid #e9ecef;
+    border-radius: 50%;
+    display: flex;
+}
+
+.resume-img img{
+    max-width: 80%;
+    max-height: 80%;
+    height: 80%;
+    margin: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+
+@media (max-width: 768px) {
+    .resume-img {
+        border: none;
+    }
+}

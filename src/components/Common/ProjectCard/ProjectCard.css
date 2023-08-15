@@ -1,6 +1,5 @@
 .project-card {
     width: 250px;
-    border-radius: 10px;
     border: 2px solid black;
     background-color: var(--primary-background-color);
 }
@@ -9,7 +8,7 @@
     cursor: pointer;
     background-color: var(--secondary-color);
     transition: all .2s ease-out;
-    box-shadow: 0 4px 8px rgba(26, 26, 26, 0.645);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.645);
     transition: all .2s ease-in-out;
 }
 
@@ -33,8 +32,6 @@
 .img-div{
     width: 250px;
     height: 250px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
