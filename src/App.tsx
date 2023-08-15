@@ -35,11 +35,16 @@ function App() {
   }, [])
 
   useEffect(()=> {
-    const body = document.querySelector("body");
     if (modalActive) {
-      if(body) body.style.overflow = "hidden";
+      document.ontouchmove = function (e) {
+        e.preventDefault();
+      }
+      document.body.style.overflow = "hidden"
     } else {
-      if(body) body.style.overflow = "auto";
+      document.ontouchmove = function (e) {
+        return true;
+      }
+      document.body.style.removeProperty('overflow')
     }
   }, [modalActive])
 
