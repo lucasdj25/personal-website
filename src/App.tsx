@@ -15,10 +15,6 @@ function App() {
 
   // TODO - checkout out reacts-spring for animations
 
-  // TODO - potentially add Skills Section (blue background)
-
-  // TODO - see if app looks better without section containers (remove color/border/filter)
-
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
   const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 700 ? true : false)
