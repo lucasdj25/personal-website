@@ -8,10 +8,14 @@
     align-items: center;
     text-align: center;
     align-content: center;
-    padding: 10px 0px 10px 0px;
+    padding: 30px 0px 8px 0px;
     z-index: 2;
-
+    transition: padding .3s ease-in-out;
   }
+
+#navbar.navbar-scrolled {
+    padding: 8px 0px 8px 0px;
+}
 
 .navbar-scrolled {
     background-color: #212529 !important;
