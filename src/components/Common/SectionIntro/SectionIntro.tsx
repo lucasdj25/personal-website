@@ -3,7 +3,7 @@ import './SectionIntro.css';
 
 interface SectionIntroProps {
     title: string
-    desc: string
+    desc?: string
     light: boolean
     titleColor?: string
 }

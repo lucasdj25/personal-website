@@ -69,6 +69,7 @@ function NavBar() {
             <ul id="navlist">
                 <li className='current'><a href="#home-section">HOME</a></li>
                 <li><a href="#about-section" className='navlink'>ABOUT</a></li>
+                <li><a href="#skills-section" className='navlink'>SKILLS</a></li>
                 <li><a href="#resume-section"className='navlink'>RESUME</a></li>
                 <li><a href="#projects-section"className='navlink'>PROJECTS</a></li>
                 <li><a href="#contact-section"className='navlink'>CONTACT</a></li>

@@ -76,6 +76,7 @@ const MobileNavigationBar = () => {
       >
           <a href="#home-section" className='mobile-current'>HOME</a>
           <a href="#about-section">ABOUT</a>
+          <a href='#skills-section'>SKILLS</a>
           <a href="#resume-section">RESUME</a>
           <a href="#projects-section">PROJECTS</a>
           <a href="#contact-section">CONTACT</a>

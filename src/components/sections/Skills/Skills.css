@@ -1,0 +1,12 @@
+#skills-section {
+    background-color: var(--primary-color);
+}
+
+.skills-content {
+    display: flex;
+    max-width: 60%;
+}
+
+.skills-content img {
+    width: 400px;
+}

@@ -9,6 +9,7 @@ import NavBar from './components/Navigation/NavBar';
 import { ProjectModel } from './models/ProjectModel';
 import ProjectModal from './components/Common/ProjectModal/ProjectModal';
 import MobileNavigationBar from './components/Navigation/MobileNavigationBar';
+import Skills from './components/sections/Skills/Skills';
 
 function App() {
 
@@ -63,6 +64,7 @@ function App() {
         {smallScreen ? <MobileNavigationBar/> :<NavBar/>}
         <Home />
         <About />
+        <Skills />
         <Resume />
         <Projects setModal={setModal}/>
         <Contact />
