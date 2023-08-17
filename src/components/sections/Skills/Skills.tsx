@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Skills.css';
 import SectionIntro from '../../Common/SectionIntro/SectionIntro';
+import NoneSelected from '../../Common/StackLevels/NoneSelected/NoneSelected';
 
 enum SelectedLevel {
     NONE = 'white',
@@ -39,7 +40,7 @@ function Skills() {
                         </div>
                     </div>
                     <div className='display-skills-container'>
-                            {selectedLevel}
+                        {selectedLevel === SelectedLevel.NONE ? <NoneSelected /> : <p>{selectedLevel}</p>}
                     </div>
                 </div>
             </div>
