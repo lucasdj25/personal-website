@@ -1,19 +1,36 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.bb7021fe.css",
-    "main.js": "/personal-website/static/js/main.ad54ba5c.js",
-    "static/media/personal-website.png": "/personal-website/static/media/personal-website.3d4818555e4accf8790c.png",
-    "static/media/main.jpg": "/personal-website/static/media/main.82297f775dc9ae946e38.jpg",
+    "main.css": "/personal-website/static/css/main.bf4edbdb.css",
+    "main.js": "/personal-website/static/js/main.18de2a0d.js",
+    "static/media/personal-website.png": "/personal-website/static/media/personal-website.41e388c784bbbc0bbb30.png",
+    "static/media/home-image.jpg": "/personal-website/static/media/home-image.f641101a42941e228608.jpg",
+    "static/media/cypress-logo.png": "/personal-website/static/media/cypress-logo.cdad75e679a1bc245a20.png",
     "static/media/portrait.jpg": "/personal-website/static/media/portrait.c8064637575d59bc446e.jpg",
-    "static/media/autoownerslogo.png": "/personal-website/static/media/autoownerslogo.c1559f3cc2753f1f28e3.png",
+    "static/media/nodejs-logo.png": "/personal-website/static/media/nodejs-logo.d6153fa85318a68d9bca.png",
+    "static/media/webpack-logo.png": "/personal-website/static/media/webpack-logo.47692505d122dbcae490.png",
+    "static/media/nest-logo.png": "/personal-website/static/media/nest-logo.de54a79df6321583eea8.png",
+    "static/media/typescript-logo.png": "/personal-website/static/media/typescript-logo.1e3902edbe4c3f2970d8.png",
+    "static/media/auto-owners-logo.png": "/personal-website/static/media/auto-owners-logo.c1559f3cc2753f1f28e3.png",
     "static/media/resume.pdf": "/personal-website/static/media/resume.6de7a7ef45dc0b73c246.pdf",
-    "static/media/grandvalleylogo.webp": "/personal-website/static/media/grandvalleylogo.9638614dc2e8a5d4b569.webp",
+    "static/media/express-logo.png": "/personal-website/static/media/express-logo.a6200681d3c906d7cf1b.png",
+    "static/media/vue-logo.png": "/personal-website/static/media/vue-logo.6764d7b3c51f3f24f538.png",
+    "static/media/html-logo.png": "/personal-website/static/media/html-logo.323dab0ccafeb98fae45.png",
+    "static/media/full-stack-logo-top.png": "/personal-website/static/media/full-stack-logo-top.35b35ac87c1e57b92350.png",
+    "static/media/full-stack-logo-white.png": "/personal-website/static/media/full-stack-logo-white.835cc42b001e066043e3.png",
+    "static/media/full-stack-logo-clear.png": "/personal-website/static/media/full-stack-logo-clear.0db474a3217e59782bd9.png",
+    "static/media/full-stack-logo-middle.png": "/personal-website/static/media/full-stack-logo-middle.67b7771636398e7a4152.png",
+    "static/media/full-stack-logo-bottom.png": "/personal-website/static/media/full-stack-logo-bottom.cdeed0ffa5146cde8724.png",
+    "static/media/jira-logo.png": "/personal-website/static/media/jira-logo.3c755a2f4a5ed28f0aba.png",
+    "static/media/grand-valley-logo.webp": "/personal-website/static/media/grand-valley-logo.9638614dc2e8a5d4b569.webp",
+    "static/media/css-logo.png": "/personal-website/static/media/css-logo.7827de0ce6ca72b32d08.png",
+    "static/media/api-logo.png": "/personal-website/static/media/api-logo.5149c8ae8096e6eb0c42.png",
+    "static/media/react-logo.png": "/personal-website/static/media/react-logo.2a0cac33f155e4a27216.png",
     "index.html": "/personal-website/index.html",
-    "main.bb7021fe.css.map": "/personal-website/static/css/main.bb7021fe.css.map",
-    "main.ad54ba5c.js.map": "/personal-website/static/js/main.ad54ba5c.js.map"
+    "main.bf4edbdb.css.map": "/personal-website/static/css/main.bf4edbdb.css.map",
+    "main.18de2a0d.js.map": "/personal-website/static/js/main.18de2a0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb7021fe.css",
-    "static/js/main.ad54ba5c.js"
+    "static/css/main.bf4edbdb.css",
+    "static/js/main.18de2a0d.js"
   ]
 }
