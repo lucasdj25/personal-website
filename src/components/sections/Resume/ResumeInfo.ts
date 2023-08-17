@@ -60,6 +60,6 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
             }
         ],
         place: "Fremont High School",
-        img: require("../../../assets/images/skills/react-logo.png")
+        img: require("../../../assets/images/resume/packers-logo.png")
     }
 ]
