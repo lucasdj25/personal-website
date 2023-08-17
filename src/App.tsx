@@ -9,14 +9,11 @@ import NavBar from './components/Navigation/NavBar';
 import { ProjectModel } from './models/ProjectModel';
 import ProjectModal from './components/Common/ProjectModal/ProjectModal';
 import MobileNavigationBar from './components/Navigation/MobileNavigationBar';
+import Skills from './components/sections/Skills/Skills';
 
 function App() {
 
   // TODO - checkout out reacts-spring for animations
-
-  // TODO - potentially add Skills Section (blue background)
-
-  // TODO - see if app looks better without section containers (remove color/border/filter)
 
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
@@ -63,6 +60,7 @@ function App() {
         {smallScreen ? <MobileNavigationBar/> :<NavBar/>}
         <Home />
         <About />
+        <Skills />
         <Resume />
         <Projects setModal={setModal}/>
         <Contact />

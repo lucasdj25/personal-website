@@ -1,0 +1,88 @@
+#skills-section {
+    background-color: var(--primary-color);
+}
+
+#skills-section * {
+    box-sizing: border-box;
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-content img {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+/* Rules for the hover effects */
+.stack-flex-wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.stack-overlay {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stack-top {
+    width: 75%;
+    height: 40%;;
+}
+
+.stack-middle {
+    width: 75%;
+    height: 27%;
+}
+
+.stack-bottom {
+    width: 75%;
+    height: 33%;
+}
+
+.stack-image-wrapper {
+    height: 400px !important;
+    width: 400px !important;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.display-skills-container {
+    min-height: 100%;
+    max-width: 50%;
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.temp {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .stack-flex-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .display-skills-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
