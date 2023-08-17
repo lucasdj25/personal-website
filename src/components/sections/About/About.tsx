@@ -4,13 +4,11 @@ import SectionIntro from '../../Common/SectionIntro/SectionIntro';
 
 function About() {
 
-    // TODO - Finish About section
-
     return (
         <div id="about-section" className="section content-section">
             <div className='centered'>
                 <SectionIntro title='About' desc='This is me.' light={false} />
-                <div className='section-main-container rounded-corners'>
+                <div className='section-main-container'>
                     <div className='introduction'>
                         <div className='picture-div' />
                         <p>Hello, I'm Lucas Johnson! I am a software developer who recently graduated from Grand Valley State University with a Bachelor's degree in Computer science

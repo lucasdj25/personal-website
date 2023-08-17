@@ -7,7 +7,6 @@ interface ResumeImageProps{
 }
 
 function ResumeImage({img, place}: ResumeImageProps){
-    // TODO - Weird size issue on mobile screens
     return (
         <div className='resume-img'>
             {img && <img src={img} alt={`${place} Logo`} />}

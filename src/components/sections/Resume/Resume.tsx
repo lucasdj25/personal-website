@@ -4,8 +4,6 @@ import SectionIntro from '../../Common/SectionIntro/SectionIntro';
 import { resumeWorkInfo, resumeEducationInfo } from './ResumeInfo';
 import ResumeCard from '../../Common/ResumeCard/ResumeCard';
 
-// TODO - Try out different Resume section style (Roadmap style where hovering over a particular node displays the description)
-
 function Resume() {
     return (
         <div id="resume-section" className="section content-section">
