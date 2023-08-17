@@ -1,0 +1,29 @@
+.skills-level-selected {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    max-width: 600px;
+    color: white;
+}
+
+.display-skills-container h3{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 25px;
+}
+
+.skill {
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.skill h4 {
+    font-weight: 400;
+}
+
+.skill img {
+    width: 70px;
+    height: 70px;
+}

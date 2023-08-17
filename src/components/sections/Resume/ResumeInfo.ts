@@ -28,7 +28,7 @@ export const resumeWorkInfo: ResumeInfoModel[] = [
             }
         ],
         place: "Auto-Owners Insurance",
-        img: require("../../../assets/images/autoownerslogo.png")
+        img: require("../../../assets/images/resume/auto-owners-logo.png")
     }
 ]
 
@@ -46,7 +46,7 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
             }
         ],
         place: "Grand Valley State University",
-        img: require("../../../assets/images/grandvalleylogo.webp")
+        img: require("../../../assets/images/resume/grand-valley-logo.webp")
     }, 
     {
         positions: [
@@ -60,6 +60,6 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
             }
         ],
         place: "Fremont High School",
-        img: require("../../../assets/images/packerslogo.png")
+        img: require("../../../assets/images/skills/react-logo.png")
     }
 ]

@@ -37,7 +37,7 @@
 
 .stack-top {
     width: 75%;
-    height: 40%;
+    height: 40%;;
 }
 
 .stack-middle {
@@ -62,6 +62,10 @@
     min-height: 100%;
     max-width: 50%;
     flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .temp {
@@ -69,6 +73,7 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
