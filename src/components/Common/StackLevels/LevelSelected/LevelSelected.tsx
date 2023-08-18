@@ -15,8 +15,8 @@ function LevelSelected({skills, title}: LevelSelectedProps){
             <div className='skills-level-selected'>
                 {skills.map((skill, i) => {
                     return (
-                        <div className='skill'>
-                            <img src={skill.img} alt={`${skill.skill} Logo`} />
+                        <div className='skill' key={i}>
+                            <img src={skill.img} alt={`${skill.skill} Logo`}/>
                             <h4>{skill.skill}</h4>
                         </div>
                     );
