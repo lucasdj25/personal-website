@@ -22,6 +22,10 @@ export const FrontEndSkills: SkillModel[] = [
         img: require("../../../assets/images/skills/vue-logo.png")
     },
     {
+        skill: "Bootstrap",
+        img: require("../../../assets/images/skills/bootstrap-logo.png")
+    },
+    {
         skill: "Jest",
         img: require("../../../assets/images/skills/jest-logo.png")
     },
@@ -44,6 +48,10 @@ export const ToolsSkills: SkillModel[] = [
         skill: "Webpack",
         img: require("../../../assets/images/skills/webpack-logo.png")
     },
+    {
+        skill: "Jenkins",
+        img: require("../../../assets/images/skills/jenkins-logo.png")
+    },
 ]
 
 export const BackEndSkills: SkillModel[] = [
@@ -52,15 +60,23 @@ export const BackEndSkills: SkillModel[] = [
         img: require("../../../assets/images/skills/nodejs-logo.png")
     },
     {
+        skill: "API's",
+        img: require("../../../assets/images/skills/api-logo.png")
+    },
+    {
         skill: "NestJS",
         img: require("../../../assets/images/skills/nest-logo.png")
     },
     {
-        skill: "ExpressJS",
-        img: require("../../../assets/images/skills/express-logo.png")
+        skill: "Sprint Boot",
+        img: require("../../../assets/images/skills/springboot-logo.png")
     },
     {
-        skill: "API's",
-        img: require("../../../assets/images/skills/api-logo.png")
+        skill: "Groovy",
+        img: require("../../../assets/images/skills/groovy-logo.png")
+    },
+    {
+        skill: "ExpressJS",
+        img: require("../../../assets/images/skills/express-logo.png")
     },
 ]
