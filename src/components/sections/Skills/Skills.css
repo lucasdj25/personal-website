@@ -2,10 +2,6 @@
     background-color: var(--primary-color);
 }
 
-#skills-section * {
-    box-sizing: border-box;
-}
-
 .skills-content {
     display: flex;
     flex-wrap: wrap;
@@ -33,6 +29,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100vh;
+    max-height: 100vh;
 }
 
 .stack-top {
@@ -51,11 +49,13 @@
 }
 
 .stack-image-wrapper {
-    height: 400px !important;
-    width: 400px !important;
+    height: 400px;
+    width: 400px;
     position: relative;
     overflow: hidden;
     display: inline-block;
+    max-width: 100vh;
+    max-height: 100vh;
 }
 
 .display-skills-container {
@@ -84,5 +84,14 @@
     .display-skills-container {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .stack-image-wrapper {
+        height: 95vw;
+        width: 95vw;
+    }
+
+    .stack-overlay {
+        height: 95vw;
+        width: 95vw;
     }
 }
