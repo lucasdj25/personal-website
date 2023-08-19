@@ -37,14 +37,8 @@ function App() {
 
   useEffect(()=> {
     if (modalActive) {
-      document.ontouchmove = function (e) {
-        e.preventDefault();
-      }
       document.body.style.overflow = "hidden"
     } else {
-      document.ontouchmove = function (e) {
-        return true;
-      }
       document.body.style.removeProperty('overflow')
     }
   }, [modalActive])
