@@ -51,7 +51,7 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
     {
         positions: [
             {
-                title: "High School Diploma",
+                title: "Highschool Diploma",
                 startDate: "August 2015",
                 endDate: "June 2019",
                 desc: "I graduated from Fremont Public Highschool in Spring of 2019 with a GPA of 3.9. During my time in High school I partipated in multiple different "
@@ -59,7 +59,7 @@ export const resumeEducationInfo: ResumeInfoModel[] = [
                     + "I was also a member of my school's National Honor Society."
             }
         ],
-        place: "Fremont High School",
+        place: "Fremont Highschool",
         img: require("../../../assets/images/resume/packers-logo.png")
     }
 ]

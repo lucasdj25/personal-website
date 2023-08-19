@@ -1,14 +1,13 @@
-import React, { useState, useRef, useEffect,  FC, ReactElement } from 'react';
+import React, { useState, useRef, useEffect, ReactNode } from 'react';
+import { useTransition, animated } from '@react-spring/web';
 
-interface ChildComponentProps {
-  isInViewport: boolean;
+
+interface TransitionInWrapperProps {
+  children: ReactNode;
+  direction?: string;
 }
 
-interface InViewportWrapperProps {
-  children: ReactElement<ChildComponentProps> | ReactElement<ChildComponentProps>[];
-}
-
-const InViewportWrapper: FC<InViewportWrapperProps> = ({ children }) => {
+function TransitionInWrapper({ children }: TransitionInWrapperProps){
   const targetRef = useRef<HTMLDivElement | null>(null);
   const [isInViewport, setIsInViewport] = useState<boolean>(false);
 
@@ -17,6 +16,12 @@ const InViewportWrapper: FC<InViewportWrapperProps> = ({ children }) => {
       setIsInViewport(true);
     }
   };
+
+  const transitions = useTransition(children, {
+    from: { opacity: 0, transform: 'translateX(100%)' },
+    enter: { opacity: 1, transform: 'translateX(0%)' },
+    config: { tension: 300, friction: 100 },
+  });
 
   useEffect(() => {
     const options: IntersectionObserverInit = {
@@ -40,11 +45,15 @@ const InViewportWrapper: FC<InViewportWrapperProps> = ({ children }) => {
 
   return (
     <div ref={targetRef}>
-      {React.Children.map(children, (child) =>
-        React.cloneElement(child, { isInViewport })
+      {transitions((style) =>
+        isInViewport ? (
+          <animated.div style={style}  className="animated-item">
+            {children}
+          </animated.div>
+        ) : null
       )}
     </div>
   );
 };
 
-export default InViewportWrapper;
+export default TransitionInWrapper;
