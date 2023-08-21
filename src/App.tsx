@@ -15,6 +15,8 @@ function App() {
 
   // TODO - checkout out reacts-spring for animations
 
+  // TODO - fixes scrolling issues on mobile screens
+
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
   const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 700 ? true : false)
@@ -36,10 +38,17 @@ function App() {
   }, [])
 
   useEffect(()=> {
+    const htmlStyle = document.querySelector("html")!.style!
+    const bodyStyle = document.body.style
+
     if (modalActive) {
-      document.body.style.overflow = "hidden"
+      htmlStyle.removeProperty("overflow-x")
+      bodyStyle.removeProperty("overflow-x")
+      bodyStyle.overflowY = "hidden"
     } else {
-      document.body.style.removeProperty('overflow')
+      bodyStyle.removeProperty('overflow')
+      htmlStyle.overflowX = "hidden"
+      bodyStyle.overflowX = "hidden"
     }
   }, [modalActive])
 

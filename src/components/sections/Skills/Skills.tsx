@@ -82,7 +82,7 @@ function Skills() {
                                     <div className='stack-bottom' onClick={()=>{handleClick(SelectedLevel.BOTTOM)}} onMouseEnter={()=>{handleHover(SelectedLevel.BOTTOM)}} onMouseLeave={()=>{handleHover(SelectedLevel.NONE)}}></div>
                                 </div>
                                 <div className='stack-image-wrapper'>
-                                    <img src={require(`../../../assets/images/full-stack-images/full-stack-logo-${selectedLevel}.png`)} alt='Full Stack Logo Engineer' />
+                                    <img src={require(`../../../assets/images/full-stack-images/full-stack-logo-${selectedLevel}-text.png`)} alt='Full Stack Logo Engineer' />
                                 </div>
                             </div>
                         </div>
