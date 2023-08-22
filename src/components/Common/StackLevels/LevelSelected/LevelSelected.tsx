@@ -10,10 +10,8 @@ interface LevelSelectedProps {
 
 function LevelSelected({skills, title}: LevelSelectedProps){
     
-    // TODO - fire on every hover/click event
-    
     return (
-        <TransitionInWrapper xTo={50}>
+        <TransitionInWrapper xTo={200} key={title}>
             <h3>{title}</h3>
             <div className='skills-level-selected'>
                 {skills.map((skill, i) => {
