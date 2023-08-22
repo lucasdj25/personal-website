@@ -59,12 +59,16 @@
         text-align: center;
         text-align-last: auto;
         width: 90% !important;
+        max-width: none;
     }
 }
 
 @media (max-width: 300px) {
-    .introduction p {
+    .intro-paragraph {
         width: calc(100% - 250px);
+    }
+    .introduction p {
+        width: 100%;
     }
     .picture-div {
         height: 250px;

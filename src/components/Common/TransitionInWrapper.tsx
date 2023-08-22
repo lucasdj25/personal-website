@@ -11,9 +11,10 @@ interface TransitionInWrapperProps {
   once?: boolean;
   rootMargin?: string;
   onClick?: () => void;
+  reset?: boolean;
 }
 
-function TransitionInWrapper({ children, xTo = 0, yTo = 0, delay = 0, className, once = true, rootMargin = "10", onClick}: TransitionInWrapperProps){
+function TransitionInWrapper({ children, xTo = 0, yTo = 0, delay = 0, className, once = true, rootMargin = "10", onClick, reset}: TransitionInWrapperProps){
   const [ref, inView] = useInView({
       rootMargin: `-${rootMargin}% 0px -${rootMargin}% 0px`,
       once: once,
@@ -25,6 +26,7 @@ function TransitionInWrapper({ children, xTo = 0, yTo = 0, delay = 0, className,
     y: inView ? 0 : yTo,
     config: { tension: 280, friction: 120 },
     delay: delay,
+    reset: reset
   });
 
   return (
