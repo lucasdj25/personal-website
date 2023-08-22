@@ -13,8 +13,6 @@ import Skills from './components/sections/Skills/Skills';
 
 function App() {
 
-  // TODO - checkout out reacts-spring for animations
-
   const [modalActive, setModalActive] = useState(false)
   const [modalProject, setModalProject] = useState<ProjectModel>()
   const [smallScreen, setSmallScreen] = useState(window.innerWidth <= 700 ? true : false)

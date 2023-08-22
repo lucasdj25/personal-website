@@ -5,6 +5,7 @@ import NoneSelected from '../../Common/StackLevels/NoneSelected/NoneSelected';
 import { FrontEndSkills, ToolsSkills, BackEndSkills } from './SkillInfo';
 import { SkillModel } from '../../../models/SkillModel';
 import LevelSelected from '../../Common/StackLevels/LevelSelected/LevelSelected';
+import TransitionInWrapper from '../../Common/TransitionInWrapper';
 
 export enum SelectedLevel {
     NONE = 'white',
@@ -73,7 +74,7 @@ function Skills() {
             <div className='centered'>
                 <SectionIntro title='Skills' desc='An overview of my talents.' light={false} titleColor='black'/>
                 <div className='section-main-container skills-content'>
-                    <div className='stack-flex-wrapper'>
+                    <TransitionInWrapper xTo={-50} className='stack-flex-wrapper'>
                         <div className='temp'>
                             <div className='stack-wrapper'>
                                 <div className='stack-overlay'>
@@ -86,8 +87,8 @@ function Skills() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='display-skills-container'>
+                    </ TransitionInWrapper>
+                    <div className='display-skills-container' >
                         {selectedLevel === SelectedLevel.NONE ? <NoneSelected /> : <LevelSelected skills={selectedSkills} title={getSkillsTitle()}/>}
                     </div>
                 </div>

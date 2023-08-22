@@ -1,58 +1,36 @@
-import React, { useState, useRef, useEffect, ReactNode } from 'react';
-import { useTransition, animated } from '@react-spring/web';
+import React, { ReactNode } from 'react';
+import { animated, useInView, useSpring } from '@react-spring/web';
 
 
 interface TransitionInWrapperProps {
   children: ReactNode;
-  direction?: string;
+  xTo?: number;
+  yTo?: number;
+  delay?: number;
+  className?: string;
+  once?: boolean;
+  rootMargin?: string;
+  onClick?: () => void;
 }
 
-function TransitionInWrapper({ children }: TransitionInWrapperProps){
-  const targetRef = useRef<HTMLDivElement | null>(null);
-  const [isInViewport, setIsInViewport] = useState<boolean>(false);
+function TransitionInWrapper({ children, xTo = 0, yTo = 0, delay = 0, className, once = true, rootMargin = "10", onClick}: TransitionInWrapperProps){
+  const [ref, inView] = useInView({
+      rootMargin: `-${rootMargin}% 0px -${rootMargin}% 0px`,
+      once: once,
+  })
 
-  const handleIntersection: IntersectionObserverCallback = (entries) => {
-    if (entries[0].isIntersecting) {
-      setIsInViewport(true);
-    }
-  };
-
-  const transitions = useTransition(children, {
-    from: { opacity: 0, transform: 'translateX(100%)' },
-    enter: { opacity: 1, transform: 'translateX(0%)' },
-    config: { tension: 300, friction: 100 },
+  const springProps = useSpring({
+    opacity: inView ? 1 : 0,
+    x: inView ? 0 : xTo,
+    y: inView ? 0 : yTo,
+    config: { tension: 280, friction: 120 },
+    delay: delay,
   });
 
-  useEffect(() => {
-    const options: IntersectionObserverInit = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5,
-    };
-
-    const observer = new IntersectionObserver(handleIntersection, options);
-
-    if (targetRef.current) {
-      observer.observe(targetRef.current);
-    }
-
-    return () => {
-      if (targetRef.current) {
-        observer.unobserve(targetRef.current);
-      }
-    };
-  }, []);
-
   return (
-    <div ref={targetRef}>
-      {transitions((style) =>
-        isInViewport ? (
-          <animated.div style={style}  className="animated-item">
-            {children}
-          </animated.div>
-        ) : null
-      )}
-    </div>
+    <animated.span ref={ref} style={springProps} className={className} onClick={onClick}>
+      {children}
+    </animated.span>
   );
 };
 
