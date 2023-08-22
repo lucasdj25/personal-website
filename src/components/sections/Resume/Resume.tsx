@@ -10,8 +10,8 @@ function Resume() {
         <div id="resume-section" className="section content-section">
             <div className='centered'>
                 <SectionIntro title='Resume' desc='My work and education experience.' light={true} />
-                <TransitionInWrapper rootMargin='25' className='button-transition-wrapper'>
-                    <a className='button' target="_blank" href={require("../../../assets/files/resume.pdf")} rel="noreferrer">Download CV</a>
+                <TransitionInWrapper rootMargin='25' className='resume-button-transition-wrapper'>
+                    <a className='button' target="_blank" href={require("../../../assets/files/resume.pdf")} rel="noreferrer">Download Resume</a>
                 </TransitionInWrapper>
                 <div className='section-main-container'>
                     <div className='work-section'>
