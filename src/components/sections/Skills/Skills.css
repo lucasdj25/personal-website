@@ -15,7 +15,7 @@
 }
 
 /* Rules for the hover effects */
-.stack-flex-wrapper {
+.stack-flex-basis {
     flex: 0 0 50%;
     max-width: 50%;
 }
@@ -68,7 +68,7 @@
     flex-direction: column;
 }
 
-.temp {
+.stack-flex-wrapper {
     display: flex;
     height: 100%;
     align-items: center;
@@ -77,7 +77,7 @@
 }
 
 @media (max-width: 768px) {
-    .stack-flex-wrapper {
+    .stack-flex-basis {
         flex: 0 0 100%;
         max-width: 100%;
     }
@@ -88,10 +88,14 @@
     .stack-image-wrapper {
         height: 95vw;
         width: 95vw;
+        max-width: 400px;
+        max-height: 400px;
     }
 
     .stack-overlay {
         height: 95vw;
         width: 95vw;
+        max-width: 400px;
+        max-height: 400px;
     }
 }

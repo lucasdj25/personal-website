@@ -74,8 +74,8 @@ function Skills() {
             <div className='centered'>
                 <SectionIntro title='Skills' desc='An overview of my talents.' light={false} titleColor='black'/>
                 <div className='section-main-container skills-content'>
-                    <TransitionInWrapper xTo={-50} className='stack-flex-wrapper'>
-                        <div className='temp'>
+                    <TransitionInWrapper xTo={-50} className='stack-flex-basis'>
+                        <div className='stack-flex-wrapper'>
                             <div className='stack-wrapper'>
                                 <div className='stack-overlay'>
                                     <div className='stack-top' onClick={()=>{handleClick(SelectedLevel.TOP)}} onMouseEnter={()=>{handleHover(SelectedLevel.TOP)}} onMouseLeave={()=>{handleHover(SelectedLevel.NONE)}}></div>
