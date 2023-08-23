@@ -2,10 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    align-self: center;
+    align-content: start;
     max-width: 600px;
     color: white;
+    height: calc(100% - (2rem + 25px));
 }
 
 .display-skills-container h3{
@@ -26,4 +26,8 @@
 .skill img {
     width: 70px;
     height: 70px;
+}
+
+.level-selected {
+    height: 80%;
 }
