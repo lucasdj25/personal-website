@@ -1,5 +1,6 @@
 import React from 'react';
 import './SectionIntro.css';
+import TransitionInWrapper from '../TransitionInWrapper';
 
 interface SectionIntroProps {
     title: string
@@ -11,10 +12,10 @@ interface SectionIntroProps {
 function SectionIntro({title, desc, light, titleColor}: SectionIntroProps){
 
     return (
-        <div className={`intro ${light ? 'light-intro' : 'dark-intro'}`} >
+        <TransitionInWrapper className={`intro ${light ? 'light-intro' : 'dark-intro'}`} >
             <h3 style={{ color: titleColor}}>{title}</h3>
             <h2>{desc}</h2>
-        </div>
+        </TransitionInWrapper>
     )
 }
 

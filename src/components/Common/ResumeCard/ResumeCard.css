@@ -2,6 +2,7 @@
     width: 90%;
     display: flex;
     box-sizing: border-box;
+    justify-content: center;
 }
 
 .resume-part-one {
@@ -55,6 +56,10 @@
         flex-basis: 100%;
     }
     .resume-part-one {
+        width: 100%;
         padding: 0 0 2em 0;
+    }
+    .resume-part-two {
+        width: 100%;
     }
 }

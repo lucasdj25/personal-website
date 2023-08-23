@@ -32,9 +32,14 @@
     font-weight: 500;
     line-height: 30px;
     font-size: 18px;
-    width: calc(100% - var(--picture-size));
+    width: 100%;
     padding-left: 2rem;
     text-align: left; 
+
+}
+
+.intro-paragraph {
+    max-width: calc((100% - var(--picture-size)) + 2rem);
 }
 
 @media (max-width: 1200px) {
@@ -44,17 +49,26 @@
         row-gap: 1rem;
     }
 
-    .introduction p{
-        padding-left: 0 !important;
-        width: 90% !important;
+    .introduction p {
+        padding: 0 !important;
         text-align: center;
         text-align-last: auto;
+    }
+
+    .intro-paragraph {
+        text-align: center;
+        text-align-last: auto;
+        width: 90% !important;
+        max-width: none;
     }
 }
 
 @media (max-width: 300px) {
-    .introduction p {
+    .intro-paragraph {
         width: calc(100% - 250px);
+    }
+    .introduction p {
+        width: 100%;
     }
     .picture-div {
         height: 250px;

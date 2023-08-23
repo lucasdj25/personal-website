@@ -4,7 +4,7 @@ import './NavBar.css';
 
 function NavBar() {
 
-    const [scrolled, setScrolled] = useState(false)
+    const [scrolled, setScrolled] = useState(window.scrollY !== 0)
     const [currentSection, setCurrentSection] = useState('home-section')
 
     function handleScroll() {

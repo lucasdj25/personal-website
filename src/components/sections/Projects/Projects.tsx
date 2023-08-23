@@ -5,6 +5,9 @@ import ProjectCard from '../../Common/ProjectCard/ProjectCard';
 import GridContainer from '../../Common/GridContainer/GridContainer';
 import { ProjectModel } from '../../../models/ProjectModel';
 import { projectInfo } from './ProjectInfo';
+import TransitionInWrapper from '../../Common/TransitionInWrapper';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 interface ProjectsProps {
     setModal(bool: boolean, project: ProjectModel): void;
@@ -23,6 +26,10 @@ function Projects({setModal}: ProjectsProps) {
                         })}
                     </GridContainer>
                 </div>
+                <p>See all of my projects... </p>
+                <TransitionInWrapper rootMargin='1' className='projects-button-transition-wrapper'>
+                        <a className='button' target='_blank' href={"https://github.com/lucasdj25"} rel="noreferrer">GitHub &nbsp;<FontAwesomeIcon icon={faGithub}/></a>
+                </TransitionInWrapper>
             </div>
         </div>
     );

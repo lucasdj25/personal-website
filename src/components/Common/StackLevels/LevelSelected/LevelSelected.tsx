@@ -1,6 +1,7 @@
 import React from 'react';
 import './LevelSelected.css';
 import { SkillModel } from '../../../../models/SkillModel';
+import TransitionInWrapper from '../../TransitionInWrapper';
 
 interface LevelSelectedProps {
     skills: SkillModel[]
@@ -8,9 +9,9 @@ interface LevelSelectedProps {
 }
 
 function LevelSelected({skills, title}: LevelSelectedProps){
-
+    
     return (
-        <>
+        <TransitionInWrapper xTo={200} key={title} className='level-selected'>
             <h3>{title}</h3>
             <div className='skills-level-selected'>
                 {skills.map((skill, i) => {
@@ -22,7 +23,7 @@ function LevelSelected({skills, title}: LevelSelectedProps){
                     );
                 })}
             </div>
-        </>
+        </ TransitionInWrapper>
     )
 }
 
