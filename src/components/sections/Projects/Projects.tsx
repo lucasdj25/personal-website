@@ -28,7 +28,7 @@ function Projects({setModal}: ProjectsProps) {
                 </div>
                 <p>See all of my projects... </p>
                 <TransitionInWrapper rootMargin='1' className='projects-button-transition-wrapper'>
-                        <a className='button' target='_blank' href={"https://github.com/lucasdj25"} rel="noreferrer">GitHub &nbsp;<FontAwesomeIcon icon={faGithub}/></a>
+                        <a className='button with-logo' target='_blank' href={"https://github.com/lucasdj25"} rel="noreferrer">GitHub<FontAwesomeIcon icon={faGithub}/></a>
                 </TransitionInWrapper>
             </div>
         </div>

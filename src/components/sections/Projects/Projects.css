@@ -12,3 +12,9 @@
     font-weight: 700;
     letter-spacing: 1px;
 }
+
+.with-logo {
+    column-gap: 7px;
+}
+
+

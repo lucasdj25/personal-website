@@ -20,7 +20,7 @@ function About() {
                                 software development whenever possible! Feel free to contact me if you would like to learn more about me.</p>
                         </TransitionInWrapper>
                     </div>
-                    <TransitionInWrapper xTo={50} rootMargin='1' delay={600}>
+                    <TransitionInWrapper xTo={50} rootMargin='1' delay={400}>
                         <a className='button' href={"#contact-section"}>Contact me</a>
                     </TransitionInWrapper>
                 </div>
