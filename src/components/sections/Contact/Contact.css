@@ -2,48 +2,54 @@
     background: var(--primary-background-color)
 }
 
-.contact-icon{
-    width: 120px;
-    height: 120px;
-    color: black;
-    filter: drop-shadow(2px 3px 2px rgb(0, 0, 0));
-    transition: all .2s ease-in-out;
-}
-.contact-icon:hover {
-    color: var(--primary-color);
-    cursor: pointer;
-}
-
-.logo-container {
-    box-sizing: border-box;
-    max-width: 1200px;
-    width: 100%;
-    padding: 10px 50px 10px 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.logo {
-    width: 120px;
-    text-align: center;
-    font-size: 20px;
-}
-
-.logo h4 {
-    color: var(--secondary-color);
-}
-
-.logo svg {
-    color: white;
-}
-
 @media (max-width: 768px) {
-    .logo {
-        margin: 0 0 2em 0;
-        flex-basis: 100%;
+    .contact-form {
+        width: 90% !important;
     }
-    .logo-container {
-        padding: 0;
-    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    width: 65%;
+    max-width: 750px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form input,textarea {
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter','Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    padding: 8px;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    border: 1px solid rgb(154, 154, 154);
+    background-color: transparent;
+    color: white;
+    width: 100%;
+}
+
+.contact-form textarea{
+    overflow: auto;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 14rem;
+}
+
+.contact-note {
+    padding-top: 1rem;
+    color: rgb(109, 109, 109);
+}
+
+.contact-note a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+.contact-transition-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

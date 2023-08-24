@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: start;
+    align-content: flex-start;
     max-width: 600px;
     color: white;
     height: calc(100% - (2rem + 25px));
