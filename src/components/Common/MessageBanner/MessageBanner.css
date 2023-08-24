@@ -1,0 +1,34 @@
+.contact-banner {
+    width: calc(100% - 4rem + 16px);
+    display: flex;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+.success {
+    background-color: rgb(96, 228, 69);
+}
+
+.error {
+    background-color: rgb(228, 69, 69);
+}
+
+.banner-exit {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: auto;
+}
+
+.banner-exit:hover {
+    cursor: pointer;
+    color: rgb(230, 230, 230);
+}
+
+@media (max-width: 768px) {
+    .contact-banner {
+        width: calc(90% - 4rem + 16px) !important;
+    }
+}
+

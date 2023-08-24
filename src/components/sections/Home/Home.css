@@ -27,12 +27,12 @@
 }
 
 .home-logo:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .home-spacer-line {
     width: 80%;
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid var(--secondary-color);
     margin: auto;
 }
 

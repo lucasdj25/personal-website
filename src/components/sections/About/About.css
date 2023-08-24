@@ -18,7 +18,7 @@
     height: var(--picture-size);
     width: var(--picture-size);
     border-radius: 50%;
-    border: 8px solid var(--primary-color);
+    border: 8px solid var(--secondary-color);
 }
 
 .introduction {
